@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var showSheetLargeNavigation: Bool = false
     @State var showSheetNavigation: Bool = false
     @State var showFullModalNavigation: Bool = false
+    let itemsStackNavigation: [String] = ["Stack Navigation"]
     
     var body: some View {
         ZStack {
@@ -45,6 +46,32 @@ struct ContentView: View {
                         }
                         .buttonStyle(.plain)
                         .tint(.white)
+                        
+                        
+                        ForEach(itemsStackNavigation, id: \.self) { item in
+                            NavigationLink(value: item) {
+                                Text(item)
+                                
+                            }
+                        }.navigationDestination(for: String.self) { itemStackNavigation in
+                            VStack {
+                                ZStack {
+                                    Color.yellow
+                                    VStack {
+                                        Text("Selected Item")
+                                            .font(.largeTitle)
+                                            .bold()
+                                        Text(itemStackNavigation)
+                                            .font(.system(size: 20))
+                                            .bold()
+                                        Spacer()
+                                    }
+                                    .padding(.top, 160)
+                                }
+                            }
+                            .ignoresSafeArea()
+                        }
+                        
                         
                     }
                 }.padding(.top, 50)
@@ -85,6 +112,7 @@ struct ContentView: View {
             .fullScreenCover(isPresented: $showFullModalNavigation, content: {
                 FullModalNavigation()
             })
+            
             
             
             SideMenu()
