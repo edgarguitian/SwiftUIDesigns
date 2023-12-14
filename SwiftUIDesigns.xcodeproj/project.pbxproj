@@ -64,6 +64,10 @@
 		6DDB48B42B2B6893007A0786 /* DragGestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48B32B2B6893007A0786 /* DragGestureView.swift */; };
 		6DDB48B72B2B68F7007A0786 /* StaggeredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48B62B2B68F7007A0786 /* StaggeredTextView.swift */; };
 		6DDB48BA2B2B697E007A0786 /* MaterialsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48B92B2B697E007A0786 /* MaterialsView.swift */; };
+		6DDB48BD2B2B6B01007A0786 /* VibrancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48BC2B2B6B01007A0786 /* VibrancyView.swift */; };
+		6DDB48C02B2B6B7A007A0786 /* PathMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48BF2B2B6B7A007A0786 /* PathMenuView.swift */; };
+		6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48C22B2B6BEC007A0786 /* VerticalPaggingView.swift */; };
+		6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48C52B2B6CB1007A0786 /* MaterialSaturationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +129,10 @@
 		6DDB48B32B2B6893007A0786 /* DragGestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragGestureView.swift; sourceTree = "<group>"; };
 		6DDB48B62B2B68F7007A0786 /* StaggeredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaggeredTextView.swift; sourceTree = "<group>"; };
 		6DDB48B92B2B697E007A0786 /* MaterialsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialsView.swift; sourceTree = "<group>"; };
+		6DDB48BC2B2B6B01007A0786 /* VibrancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibrancyView.swift; sourceTree = "<group>"; };
+		6DDB48BF2B2B6B7A007A0786 /* PathMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMenuView.swift; sourceTree = "<group>"; };
+		6DDB48C22B2B6BEC007A0786 /* VerticalPaggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPaggingView.swift; sourceTree = "<group>"; };
+		6DDB48C52B2B6CB1007A0786 /* MaterialSaturationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSaturationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +188,10 @@
 				6DDB48B22B2B6882007A0786 /* DragGesture */,
 				6DDB48B52B2B68E2007A0786 /* Staggered Text */,
 				6DDB48B82B2B6969007A0786 /* Materials */,
+				6DDB48BB2B2B6AF1007A0786 /* Vibrancy */,
+				6DDB48BE2B2B6B69007A0786 /* PathMenu */,
+				6DDB48C12B2B6BDC007A0786 /* Vertical Paging */,
+				6DDB48C42B2B6C9F007A0786 /* MaterialSaturation */,
 				6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */,
 				6DA29CA72B29CAC800D087C0 /* ContentView.swift */,
 				6DA29CB52B29D10500D087C0 /* ContentViewCell.swift */,
@@ -458,6 +470,38 @@
 			path = Materials;
 			sourceTree = "<group>";
 		};
+		6DDB48BB2B2B6AF1007A0786 /* Vibrancy */ = {
+			isa = PBXGroup;
+			children = (
+				6DDB48BC2B2B6B01007A0786 /* VibrancyView.swift */,
+			);
+			path = Vibrancy;
+			sourceTree = "<group>";
+		};
+		6DDB48BE2B2B6B69007A0786 /* PathMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6DDB48BF2B2B6B7A007A0786 /* PathMenuView.swift */,
+			);
+			path = PathMenu;
+			sourceTree = "<group>";
+		};
+		6DDB48C12B2B6BDC007A0786 /* Vertical Paging */ = {
+			isa = PBXGroup;
+			children = (
+				6DDB48C22B2B6BEC007A0786 /* VerticalPaggingView.swift */,
+			);
+			path = "Vertical Paging";
+			sourceTree = "<group>";
+		};
+		6DDB48C42B2B6C9F007A0786 /* MaterialSaturation */ = {
+			isa = PBXGroup;
+			children = (
+				6DDB48C52B2B6CB1007A0786 /* MaterialSaturationView.swift */,
+			);
+			path = MaterialSaturation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -538,6 +582,7 @@
 				6DDB48872B2B2DD1007A0786 /* GaugeProgressStyle.swift in Sources */,
 				6DDB48532B2B1D75007A0786 /* OtherProgressView.swift in Sources */,
 				6DDB48412B2B0D68007A0786 /* SheetNavigation.swift in Sources */,
+				6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */,
 				6DDB487C2B2B295C007A0786 /* DatePickerTimeView.swift in Sources */,
 				6DA29CBA2B29D2D200D087C0 /* SideViewContents.swift in Sources */,
 				6DDB48822B2B2A43007A0786 /* ButtonStylesView.swift in Sources */,
@@ -551,8 +596,10 @@
 				6DDB486B2B2B26E8007A0786 /* RatingView.swift in Sources */,
 				6DDB48A72B2B31E8007A0786 /* BottomToTopFill.swift in Sources */,
 				6DDB48562B2B1DD2007A0786 /* AsyncImageView.swift in Sources */,
+				6DDB48C02B2B6B7A007A0786 /* PathMenuView.swift in Sources */,
 				6DA29CB82B29D1F100D087C0 /* SideMenu.swift in Sources */,
 				6DDB48A32B2B319A007A0786 /* ModernCircularLoader.swift in Sources */,
+				6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */,
 				6DDB48A52B2B31C2007A0786 /* DashCircleLoaderView.swift in Sources */,
 				6DDB48972B2B306B007A0786 /* SquareLoaderView.swift in Sources */,
 				6DDB48A92B2B3212007A0786 /* PieSegmentLoader.swift in Sources */,
@@ -574,6 +621,7 @@
 				6DDB48852B2B2AAB007A0786 /* LoadingButtonsView.swift in Sources */,
 				6DDB48762B2B289F007A0786 /* DatePickerView.swift in Sources */,
 				6DDB488B2B2B2E18007A0786 /* BarProgressStyle.swift in Sources */,
+				6DDB48BD2B2B6B01007A0786 /* VibrancyView.swift in Sources */,
 				6DDB489B2B2B310A007A0786 /* AnimatedStrokeTriangle.swift in Sources */,
 				6DDB48AC2B2B6600007A0786 /* GradientTextView.swift in Sources */,
 				6DDB48932B2B3018007A0786 /* RotateCircleAroundCircle.swift in Sources */,

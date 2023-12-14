@@ -171,30 +171,6 @@ struct ContentView: View {
                                 ContentViewCell(title: "Loading Buttons")
                             }
                             
-                            // MARK: Gradient Text
-                            NavigationLink(destination: GradientTextView()) {
-                                ContentViewCell(title: "Gradient Text")
-                            }
-                            
-                            // MARK: Unsplash
-                            NavigationLink(destination: Unsplash()) {
-                                ContentViewCell(title: "Unsplash API")
-                            }
-                            
-                            // MARK: Drag Gesture
-                            NavigationLink(destination: DragGestureView()) {
-                                ContentViewCell(title: "Drag Gesture")
-                            }
-                            
-                            // MARK: Staggered Text
-                            NavigationLink(destination: StaggeredTextView()) {
-                                ContentViewCell(title: "Staggered Text")
-                            }
-                            
-                            // MARK: Materials
-                            NavigationLink(destination: MaterialsView()) {
-                                ContentViewCell(title: "Materials")
-                            }
                         }
                         
                         Section(header: Text("Login")) {
@@ -228,6 +204,53 @@ struct ContentView: View {
                             // MARK: Date Picker Time
                             NavigationLink(destination: DatePickerTimeView()) {
                                 ContentViewCell(title: "Date Picker Time")
+                            }
+                        }
+                        
+                        Section(header: Text("Cool")) {
+                            // MARK: Gradient Text
+                            NavigationLink(destination: GradientTextView()) {
+                                ContentViewCell(title: "Gradient Text")
+                            }
+                            
+                            // MARK: Unsplash
+                            NavigationLink(destination: Unsplash()) {
+                                ContentViewCell(title: "Unsplash API")
+                            }
+                            
+                            // MARK: Drag Gesture
+                            NavigationLink(destination: DragGestureView()) {
+                                ContentViewCell(title: "Drag Gesture")
+                            }
+                            
+                            // MARK: Staggered Text
+                            NavigationLink(destination: StaggeredTextView()) {
+                                ContentViewCell(title: "Staggered Text")
+                            }
+                            
+                            // MARK: Materials
+                            NavigationLink(destination: MaterialsView()) {
+                                ContentViewCell(title: "Materials")
+                            }
+                            
+                            // MARK: Vibrancy
+                            NavigationLink(destination: VibrancyView()) {
+                                ContentViewCell(title: "Vibrancy")
+                            }
+                            
+                            // MARK: Path Menu
+                            NavigationLink(destination: PathMenuView()) {
+                                ContentViewCell(title: "Path Menu")
+                            }
+                            
+                            // MARK: Vertical Pagging
+                            NavigationLink(destination: VerticalPaggingView()) {
+                                ContentViewCell(title: "Vertical Pagging")
+                            }
+                            
+                            // MARK: Material Saturation
+                            NavigationLink(destination: MaterialSaturationView()) {
+                                ContentViewCell(title: "Material Saturation")
                             }
                         }
                         
