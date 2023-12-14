@@ -12,7 +12,8 @@ struct ContentView: View {
     @State var showSheetLargeNavigation: Bool = false
     @State var showSheetNavigation: Bool = false
     @State var showFullModalNavigation: Bool = false
-    let itemsStackNavigation: [String] = ["Stack Navigation"]
+    let itemsStackNavigation: [String] = ["Stack Navigation 1", "Stack Navigation 2"]
+    @State private var searchText = ""
     
     var body: some View {
         ZStack {
@@ -48,7 +49,7 @@ struct ContentView: View {
                         .tint(.white)
                         
                         
-                        ForEach(itemsStackNavigation, id: \.self) { item in
+                        ForEach(filteredData, id: \.self) { item in
                             NavigationLink(value: item) {
                                 Text(item)
                                 
@@ -74,7 +75,9 @@ struct ContentView: View {
                         
                         
                     }
-                }.padding(.top, 50)
+                }
+                .padding(.top, 50)
+                .searchable(text: $searchText)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .overlay(
@@ -128,6 +131,14 @@ struct ContentView: View {
                 .frame(width: 300)
         }
     }
+    
+    var filteredData: [String] {
+            guard searchText.isEmpty else {
+                return itemsStackNavigation.filter { $0.contains(searchText) }
+            }
+            
+            return itemsStackNavigation
+        }
 }
 
 #Preview {
