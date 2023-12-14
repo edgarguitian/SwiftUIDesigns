@@ -14,7 +14,8 @@ struct ContentView: View {
     @State var showFullModalNavigation: Bool = false
     let itemsStackNavigation: [String] = ["Stack Navigation 1", "Stack Navigation 2"]
     @State private var searchText = ""
-    
+    @State var isLoading: Bool = false
+
     var body: some View {
         ZStack {
             VStack {
@@ -75,6 +76,16 @@ struct ContentView: View {
                         
                         
                     }
+                    .refreshable {
+                        isLoading = true
+                        Task {
+                            try await Task.sleep(nanoseconds: 2_000_000_000)
+                            
+                            isLoading = false
+                        }
+                    }                
+                    .navigationTitle(isLoading ? "LOADING..." : "Refresable")
+
                 }
                 .padding(.top, 50)
                 .searchable(text: $searchText)
@@ -94,6 +105,8 @@ struct ContentView: View {
                         .padding(.leading, 30)
                         
                         Spacer()
+                        
+                        
                     }
                 }
                     .frame(maxWidth: .infinity)
@@ -133,12 +146,12 @@ struct ContentView: View {
     }
     
     var filteredData: [String] {
-            guard searchText.isEmpty else {
-                return itemsStackNavigation.filter { $0.contains(searchText) }
-            }
-            
-            return itemsStackNavigation
+        guard searchText.isEmpty else {
+            return itemsStackNavigation.filter { $0.contains(searchText) }
         }
+        
+        return itemsStackNavigation
+    }
 }
 
 #Preview {
