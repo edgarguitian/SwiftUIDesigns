@@ -12,19 +12,23 @@ struct LoadingButtonsView: View {
     @State private var progress = 0.2
 
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical) {
             
             ProgressView()
+            
             Spacer()
+            
             ProgressView("Loading")
                 .progressViewStyle(CircularProgressViewStyle(tint: .blue))
-                .padding()
+                .padding(.vertical, 50)
+            
             Spacer()
+            
             ProgressView("Loading", value: progressValue)
                 .progressViewStyle(.linear)
                 .tint(.blue)
                 .frame(maxWidth: 200)
-            
+                .padding(.vertical, 50)
             
             Spacer()
             
@@ -57,12 +61,14 @@ struct LoadingButtonsView: View {
                         }
                     }
                 }
+                .padding(.vertical, 50)
             
             Spacer()
             
             ProgressView(value: 0.3, label: { Text("Processing...") }, currentValueLabel: { Text("30%") })
                 .progressViewStyle(BarProgressStyle(height: 50.0))
-                .padding()
+                .padding(.vertical, 50)
+                .padding(.horizontal, 50)
             
             Spacer()
             
