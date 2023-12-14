@@ -170,6 +170,31 @@ struct ContentView: View {
                             NavigationLink(destination: LoadingButtonsView()) {
                                 ContentViewCell(title: "Loading Buttons")
                             }
+                            
+                            // MARK: Gradient Text
+                            NavigationLink(destination: GradientTextView()) {
+                                ContentViewCell(title: "Gradient Text")
+                            }
+                            
+                            // MARK: Unsplash
+                            NavigationLink(destination: Unsplash()) {
+                                ContentViewCell(title: "Unsplash API")
+                            }
+                            
+                            // MARK: Drag Gesture
+                            NavigationLink(destination: DragGestureView()) {
+                                ContentViewCell(title: "Drag Gesture")
+                            }
+                            
+                            // MARK: Staggered Text
+                            NavigationLink(destination: StaggeredTextView()) {
+                                ContentViewCell(title: "Staggered Text")
+                            }
+                            
+                            // MARK: Materials
+                            NavigationLink(destination: MaterialsView()) {
+                                ContentViewCell(title: "Materials")
+                            }
                         }
                         
                         Section(header: Text("Login")) {
