@@ -140,6 +140,70 @@ struct ContentView: View {
                             NavigationLink(destination: GridView()) {
                                 ContentViewCell(title: "GridView")
                             }
+                            
+                            // MARK: Context Menu
+                            NavigationLink(destination: ContextMenuView()) {
+                                ContentViewCell(title: "Context Menu")
+                            }
+                            
+                            // MARK: Rating View
+                            NavigationLink(destination: RatingView(rating: 1)) {
+                                ContentViewCell(title: "Rating View")
+                            }
+                            
+                            // MARK: Radial Gradient
+                            NavigationLink(destination: RadialGradientView()) {
+                                ContentViewCell(title: "Radial Gradient")
+                            }
+                            
+                            // MARK: Text Animation
+                            NavigationLink(destination: TextAnimationView()) {
+                                ContentViewCell(title: "Text Animation")
+                            }
+                            
+                            // MARK: Button Styles
+                            NavigationLink(destination: ButtonStylesView()) {
+                                ContentViewCell(title: "Button Styles")
+                            }
+                            
+                            // MARK: Loading Buttons
+                            NavigationLink(destination: LoadingButtonsView()) {
+                                ContentViewCell(title: "Loading Buttons")
+                            }
+                        }
+                        
+                        Section(header: Text("Login")) {
+                            // MARK: Login Form
+                            NavigationLink(destination: LoginFormView()) {
+                                ContentViewCell(title: "Login Form")
+                            }
+                            
+                            // MARK: Login Form Forgot
+                            NavigationLink(destination: LoginFormForgotView()) {
+                                ContentViewCell(title: "Login Form Forgot")
+                            }
+                        }
+                        
+                        Section(header: Text("Picker")) {
+                            // MARK: Date Picker
+                            NavigationLink(destination: DatePickerView()) {
+                                ContentViewCell(title: "Date Picker")
+                            }
+                            
+                            // MARK: Date Picker with Time
+                            NavigationLink(destination: DatePickerWithTimeView()) {
+                                ContentViewCell(title: "Date Picker with Time")
+                            }
+                            
+                            // MARK: Date Picker Scroll
+                            NavigationLink(destination: DatePickerScrollView()) {
+                                ContentViewCell(title: "Date Picker with Scroll")
+                            }
+                            
+                            // MARK: Date Picker Time
+                            NavigationLink(destination: DatePickerTimeView()) {
+                                ContentViewCell(title: "Date Picker Time")
+                            }
                         }
                         
                         Section(header: Text("Alerts")) {
