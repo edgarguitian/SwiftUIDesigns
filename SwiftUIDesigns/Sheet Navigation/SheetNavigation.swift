@@ -1,5 +1,5 @@
 //
-//  PresentedView.swift
+//  SheetNavigation.swift
 //  SwiftUIDesigns
 //
 //  Created by Edgar Guitian Rey on 14/12/23.
@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct PresentedView: View {
+struct SheetNavigation: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
             ZStack {
-                Color.green
+                Color.purple
                 VStack {
                     Text("👋 Hello!")
                         .bold()
@@ -37,7 +37,6 @@ struct PresentedView: View {
     }
 }
 
-
 #Preview {
-    PresentedView()
+    SheetNavigation()
 }
