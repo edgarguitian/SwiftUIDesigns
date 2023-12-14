@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var presentSideMenu = false
+    @State var showView: Bool = false
     
     var body: some View {
         ZStack {
@@ -18,6 +19,13 @@ struct ContentView: View {
                         NavigationLink(destination: TabBarT()) {
                             ContentViewCell(title: "3D Tab Bar")
                         }
+                        Button {
+                            showView.toggle()
+                        } label: {
+                            ContentViewCell(title: "Sheet Large Navigation")
+                        }
+                        .buttonStyle(.plain)
+                        .tint(.white)
                         
                     }
                 }.padding(.top, 50)
@@ -44,6 +52,10 @@ struct ContentView: View {
                     .zIndex(1)
                     .shadow(radius: 0.3)
                 , alignment: .top)
+            .sheet(isPresented: $showView, content: {
+                PresentedView()
+                    .presentationDetents([.large])
+            })
             
             
             SideMenu()
