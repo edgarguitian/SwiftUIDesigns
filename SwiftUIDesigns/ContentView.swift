@@ -11,7 +11,8 @@ struct ContentView: View {
     @State var presentSideMenu = false
     @State var showSheetLargeNavigation: Bool = false
     @State var showSheetNavigation: Bool = false
-
+    @State var showFullModalNavigation: Bool = false
+    
     var body: some View {
         ZStack {
             VStack {
@@ -33,6 +34,14 @@ struct ContentView: View {
                             showSheetNavigation.toggle()
                         } label: {
                             ContentViewCell(title: "Sheet Navigation")
+                        }
+                        .buttonStyle(.plain)
+                        .tint(.white)
+                        
+                        Button {
+                            showFullModalNavigation.toggle()
+                        } label: {
+                            ContentViewCell(title: "Full Modal Navigation")
                         }
                         .buttonStyle(.plain)
                         .tint(.white)
@@ -69,9 +78,12 @@ struct ContentView: View {
             .sheet(isPresented: $showSheetNavigation, content: {
                 SheetNavigation()
                     .presentationDetents([
-                                        .medium,
-                                        .fraction(0.3)
-                                    ])
+                        .medium,
+                        .fraction(0.3)
+                    ])
+            })
+            .fullScreenCover(isPresented: $showFullModalNavigation, content: {
+                FullModalNavigation()
             })
             
             
