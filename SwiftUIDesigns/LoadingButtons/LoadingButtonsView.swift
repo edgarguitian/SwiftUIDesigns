@@ -12,55 +12,51 @@ struct LoadingButtonsView: View {
     @State private var progress = 0.2
 
     var body: some View {
-        VStack {
+        ScrollView {
             
-            HStack {
-                ProgressView()
-                
-                ProgressView("Loading")
-                    .progressViewStyle(CircularProgressViewStyle(tint: .blue))
-                    .padding()
-                
-                ProgressView("Loading", value: progressValue)
-                    .progressViewStyle(.linear)
-                    .tint(.blue)
-                    .frame(maxWidth: 200)
-            }
+            ProgressView()
+            Spacer()
+            ProgressView("Loading")
+                .progressViewStyle(CircularProgressViewStyle(tint: .blue))
+                .padding()
+            Spacer()
+            ProgressView("Loading", value: progressValue)
+                .progressViewStyle(.linear)
+                .tint(.blue)
+                .frame(maxWidth: 200)
             
             
             Spacer()
             
             HStack {
-                HStack {
-                    ProgressView(value: progressValue)
-                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
-                        .frame(width: 20, height: 20)
-                    
-                    Text("Loading")
-                        .foregroundColor(.white)
-                }
-                .padding()
-                .background(
-                    RoundedRectangle(cornerRadius: 30)
-                        .foregroundColor(.blue)
-                    
-                )
+                ProgressView(value: progressValue)
+                    .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                    .frame(width: 20, height: 20)
                 
-                
-                
-                ProgressView(value: progress, total: 1.0)
-                    .progressViewStyle(GaugeProgressStyle())
-                    .frame(width: 50, height: 50)
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        if progress < 1.0 {
-                            withAnimation {
-                                progress += 0.2
-                            }
-                        }
-                    }
+                Text("Loading")
+                    .foregroundColor(.white)
             }
             .padding()
+            .background(
+                RoundedRectangle(cornerRadius: 30)
+                    .foregroundColor(.blue)
+                
+            )
+            
+            Spacer()
+            
+            
+            ProgressView(value: progress, total: 1.0)
+                .progressViewStyle(GaugeProgressStyle())
+                .frame(width: 50, height: 50)
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    if progress < 1.0 {
+                        withAnimation {
+                            progress += 0.2
+                        }
+                    }
+                }
             
             Spacer()
             
@@ -73,6 +69,7 @@ struct LoadingButtonsView: View {
             CustomProgressView(progress: progress)
                     .frame(height: 10)
                     .padding(.horizontal, 50)
+                    .padding(.vertical,100)
             
             Spacer()
             

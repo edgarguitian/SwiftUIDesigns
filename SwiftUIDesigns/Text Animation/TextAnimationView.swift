@@ -12,7 +12,7 @@ struct TextAnimationView: View {
     
     var body: some View {
         VStack {
-            Text("Welcome to SwiftUI Views 🎉")
+            Text("Welcome to SwiftUIDesigns 🎉")
                 .font(isActive ? .system(size: 60, weight: .bold) : .system(size: 40))
                 .foregroundStyle(isActive ? .black : .blue)
                 .padding(isActive ? 20 : 0)
