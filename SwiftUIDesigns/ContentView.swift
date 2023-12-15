@@ -252,6 +252,60 @@ struct ContentView: View {
                             NavigationLink(destination: MaterialSaturationView()) {
                                 ContentViewCell(title: "Material Saturation")
                             }
+                            
+                            // MARK: Top Menu
+                            NavigationLink(destination: CategoryView(categories: categoriesData) { value in
+                                print(value)
+                            }) {
+                                ContentViewCell(title: "Top Menu")
+                            }
+                            
+                            // MARK: Symbol Effects
+                            NavigationLink(destination: SymbolEffectsView()) {
+                                ContentViewCell(title: "Symbol Efects")
+                            }
+                            
+                            // MARK: Map
+                            NavigationLink(destination: MapView()) {
+                                ContentViewCell(title: "Map")
+                            }
+                        }
+                        
+                        Section(header: Text("Graphs")) {
+                            // MARK: Bar Mark
+                            NavigationLink(destination: BarMarkView()) {
+                                ContentViewCell(title: "Bar Mark")
+                            }
+                            
+                            // MARK: Heat Map
+                            NavigationLink(destination: HeatMapView()) {
+                                ContentViewCell(title: "Heat Map")
+                            }
+                            
+                            // MARK: Rule Mark
+                            NavigationLink(destination: RuleMarkView()) {
+                                ContentViewCell(title: "Rule Mark")
+                            }
+                            
+                            // MARK: Line Chart
+                            NavigationLink(destination: LineChartView()) {
+                                ContentViewCell(title: "Line Chart")
+                            }
+                            
+                            // MARK: Bar Chart
+                            NavigationLink(destination: BarChartView()) {
+                                ContentViewCell(title: "Bar Chart")
+                            }
+                            
+                            // MARK: Pie Chart
+                            NavigationLink(destination: PieChartView()) {
+                                ContentViewCell(title: "Pie Chart")
+                            }
+                            
+                            // MARK: Gradient Area Chart
+                            NavigationLink(destination: GradientAreaChartView()) {
+                                ContentViewCell(title: "Gradient Area Chart")
+                            }
                         }
                         
                         Section(header: Text("Alerts")) {

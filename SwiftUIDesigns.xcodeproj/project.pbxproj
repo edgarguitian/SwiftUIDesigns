@@ -15,6 +15,21 @@
 		6DA29CB62B29D10500D087C0 /* ContentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CB52B29D10500D087C0 /* ContentViewCell.swift */; };
 		6DA29CB82B29D1F100D087C0 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CB72B29D1F100D087C0 /* SideMenu.swift */; };
 		6DA29CBA2B29D2D200D087C0 /* SideViewContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CB92B29D2D200D087C0 /* SideViewContents.swift */; };
+		6DC51C492B2C3CBF005C0520 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C482B2C3CBF005C0520 /* CategoryView.swift */; };
+		6DC51C4C2B2C3FF5005C0520 /* SymbolEffectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C4B2B2C3FF5005C0520 /* SymbolEffectsView.swift */; };
+		6DC51C4F2B2C4212005C0520 /* BarMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C4E2B2C4212005C0520 /* BarMarkView.swift */; };
+		6DC51C512B2C4709005C0520 /* HeatMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C502B2C4709005C0520 /* HeatMapView.swift */; };
+		6DC51C532B2C473C005C0520 /* RuleMarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C522B2C473C005C0520 /* RuleMarkView.swift */; };
+		6DC51C552B2C4757005C0520 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C542B2C4757005C0520 /* LineChartView.swift */; };
+		6DC51C572B2C4778005C0520 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C562B2C4778005C0520 /* BarChartView.swift */; };
+		6DC51C592B2C479A005C0520 /* HeatData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C582B2C479A005C0520 /* HeatData.swift */; };
+		6DC51C5B2B2C47B3005C0520 /* PetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C5A2B2C47B3005C0520 /* PetData.swift */; };
+		6DC51C5D2B2C47C7005C0520 /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C5C2B2C47C7005C0520 /* ChartData.swift */; };
+		6DC51C5F2B2C47D6005C0520 /* PetDataSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C5E2B2C47D6005C0520 /* PetDataSeries.swift */; };
+		6DC51C612B2C47FB005C0520 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C602B2C47FB005C0520 /* PieChartView.swift */; };
+		6DC51C632B2C4867005C0520 /* GradientAreaChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C622B2C4867005C0520 /* GradientAreaChartView.swift */; };
+		6DC51C6A2B2C4CC6005C0520 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C692B2C4CC6005C0520 /* MapView.swift */; };
+		6DC51C6C2B2C4DA7005C0520 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DC51C6B2B2C4DA7005C0520 /* Location.swift */; };
 		6DDB483E2B2B0B88007A0786 /* SheetLargeNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB483D2B2B0B88007A0786 /* SheetLargeNavigation.swift */; };
 		6DDB48412B2B0D68007A0786 /* SheetNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48402B2B0D68007A0786 /* SheetNavigation.swift */; };
 		6DDB48442B2B0DF5007A0786 /* FullModalNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48432B2B0DF5007A0786 /* FullModalNavigation.swift */; };
@@ -80,6 +95,21 @@
 		6DA29CB52B29D10500D087C0 /* ContentViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewCell.swift; sourceTree = "<group>"; };
 		6DA29CB72B29D1F100D087C0 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		6DA29CB92B29D2D200D087C0 /* SideViewContents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewContents.swift; sourceTree = "<group>"; };
+		6DC51C482B2C3CBF005C0520 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		6DC51C4B2B2C3FF5005C0520 /* SymbolEffectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolEffectsView.swift; sourceTree = "<group>"; };
+		6DC51C4E2B2C4212005C0520 /* BarMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarMarkView.swift; sourceTree = "<group>"; };
+		6DC51C502B2C4709005C0520 /* HeatMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatMapView.swift; sourceTree = "<group>"; };
+		6DC51C522B2C473C005C0520 /* RuleMarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleMarkView.swift; sourceTree = "<group>"; };
+		6DC51C542B2C4757005C0520 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
+		6DC51C562B2C4778005C0520 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
+		6DC51C582B2C479A005C0520 /* HeatData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatData.swift; sourceTree = "<group>"; };
+		6DC51C5A2B2C47B3005C0520 /* PetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetData.swift; sourceTree = "<group>"; };
+		6DC51C5C2B2C47C7005C0520 /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		6DC51C5E2B2C47D6005C0520 /* PetDataSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDataSeries.swift; sourceTree = "<group>"; };
+		6DC51C602B2C47FB005C0520 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		6DC51C622B2C4867005C0520 /* GradientAreaChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAreaChartView.swift; sourceTree = "<group>"; };
+		6DC51C692B2C4CC6005C0520 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		6DC51C6B2B2C4DA7005C0520 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		6DDB483D2B2B0B88007A0786 /* SheetLargeNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetLargeNavigation.swift; sourceTree = "<group>"; };
 		6DDB48402B2B0D68007A0786 /* SheetNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetNavigation.swift; sourceTree = "<group>"; };
 		6DDB48432B2B0DF5007A0786 /* FullModalNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullModalNavigation.swift; sourceTree = "<group>"; };
@@ -192,6 +222,10 @@
 				6DDB48BE2B2B6B69007A0786 /* PathMenu */,
 				6DDB48C12B2B6BDC007A0786 /* Vertical Paging */,
 				6DDB48C42B2B6C9F007A0786 /* MaterialSaturation */,
+				6DC51C472B2C3CB0005C0520 /* TopMenu */,
+				6DC51C4A2B2C3FE3005C0520 /* Symbol Effects */,
+				6DC51C4D2B2C4203005C0520 /* Graphs */,
+				6DC51C682B2C4C7E005C0520 /* Map */,
 				6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */,
 				6DA29CA72B29CAC800D087C0 /* ContentView.swift */,
 				6DA29CB52B29D10500D087C0 /* ContentViewCell.swift */,
@@ -207,6 +241,57 @@
 				6DA29CAC2B29CAC900D087C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6DC51C472B2C3CB0005C0520 /* TopMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6DC51C482B2C3CBF005C0520 /* CategoryView.swift */,
+			);
+			path = TopMenu;
+			sourceTree = "<group>";
+		};
+		6DC51C4A2B2C3FE3005C0520 /* Symbol Effects */ = {
+			isa = PBXGroup;
+			children = (
+				6DC51C4B2B2C3FF5005C0520 /* SymbolEffectsView.swift */,
+			);
+			path = "Symbol Effects";
+			sourceTree = "<group>";
+		};
+		6DC51C4D2B2C4203005C0520 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				6DC51C642B2C49B2005C0520 /* Items */,
+				6DC51C4E2B2C4212005C0520 /* BarMarkView.swift */,
+				6DC51C502B2C4709005C0520 /* HeatMapView.swift */,
+				6DC51C522B2C473C005C0520 /* RuleMarkView.swift */,
+				6DC51C542B2C4757005C0520 /* LineChartView.swift */,
+				6DC51C562B2C4778005C0520 /* BarChartView.swift */,
+				6DC51C602B2C47FB005C0520 /* PieChartView.swift */,
+				6DC51C622B2C4867005C0520 /* GradientAreaChartView.swift */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		6DC51C642B2C49B2005C0520 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				6DC51C5E2B2C47D6005C0520 /* PetDataSeries.swift */,
+				6DC51C5C2B2C47C7005C0520 /* ChartData.swift */,
+				6DC51C5A2B2C47B3005C0520 /* PetData.swift */,
+				6DC51C582B2C479A005C0520 /* HeatData.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		6DC51C682B2C4C7E005C0520 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6DC51C692B2C4CC6005C0520 /* MapView.swift */,
+				6DC51C6B2B2C4DA7005C0520 /* Location.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		6DDB483A2B2B0B13007A0786 /* 3D Tab Bar */ = {
@@ -573,7 +658,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA29CB42B29CBBB00D087C0 /* Tap.swift in Sources */,
+				6DC51C632B2C4867005C0520 /* GradientAreaChartView.swift in Sources */,
 				6DDB484A2B2B1B97007A0786 /* ContentUnavailableNoInboxView.swift in Sources */,
+				6DC51C4C2B2C3FF5005C0520 /* SymbolEffectsView.swift in Sources */,
 				6DDB48B72B2B68F7007A0786 /* StaggeredTextView.swift in Sources */,
 				6DDB48912B2B2F63007A0786 /* RotateImageLoaderView.swift in Sources */,
 				6DDB48952B2B3041007A0786 /* MultiCircleLoaderView.swift in Sources */,
@@ -583,13 +670,18 @@
 				6DDB48532B2B1D75007A0786 /* OtherProgressView.swift in Sources */,
 				6DDB48412B2B0D68007A0786 /* SheetNavigation.swift in Sources */,
 				6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */,
+				6DC51C572B2C4778005C0520 /* BarChartView.swift in Sources */,
 				6DDB487C2B2B295C007A0786 /* DatePickerTimeView.swift in Sources */,
 				6DA29CBA2B29D2D200D087C0 /* SideViewContents.swift in Sources */,
 				6DDB48822B2B2A43007A0786 /* ButtonStylesView.swift in Sources */,
+				6DC51C5D2B2C47C7005C0520 /* ChartData.swift in Sources */,
+				6DC51C492B2C3CBF005C0520 /* CategoryView.swift in Sources */,
 				6DDB48682B2B265B007A0786 /* ContextMenuView.swift in Sources */,
 				6DDB48B42B2B6893007A0786 /* DragGestureView.swift in Sources */,
 				6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */,
+				6DC51C592B2C479A005C0520 /* HeatData.swift in Sources */,
 				6DDB485A2B2B1FA5007A0786 /* TextEditorView.swift in Sources */,
+				6DC51C512B2C4709005C0520 /* HeatMapView.swift in Sources */,
 				6DDB484E2B2B1CB9007A0786 /* ContentUnavailableNoResultsView.swift in Sources */,
 				6DDB48442B2B0DF5007A0786 /* FullModalNavigation.swift in Sources */,
 				6DDB487A2B2B290E007A0786 /* DatePickerScrollView.swift in Sources */,
@@ -601,6 +693,7 @@
 				6DDB48A32B2B319A007A0786 /* ModernCircularLoader.swift in Sources */,
 				6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */,
 				6DDB48A52B2B31C2007A0786 /* DashCircleLoaderView.swift in Sources */,
+				6DC51C4F2B2C4212005C0520 /* BarMarkView.swift in Sources */,
 				6DDB48972B2B306B007A0786 /* SquareLoaderView.swift in Sources */,
 				6DDB48A92B2B3212007A0786 /* PieSegmentLoader.swift in Sources */,
 				6DDB48712B2B280F007A0786 /* LoginFormView.swift in Sources */,
@@ -610,20 +703,27 @@
 				6DA29CB62B29D10500D087C0 /* ContentViewCell.swift in Sources */,
 				6DDB485D2B2B202F007A0786 /* OpenLinkView.swift in Sources */,
 				6DDB489D2B2B3128007A0786 /* AnimatedStrokeCircle.swift in Sources */,
+				6DC51C612B2C47FB005C0520 /* PieChartView.swift in Sources */,
 				6DDB48602B2B2082007A0786 /* ScrollViewAnimationView.swift in Sources */,
+				6DC51C532B2C473C005C0520 /* RuleMarkView.swift in Sources */,
 				6DDB48AE2B2B66D5007A0786 /* Unsplash.swift in Sources */,
+				6DC51C5B2B2C47B3005C0520 /* PetData.swift in Sources */,
 				6DDB48732B2B2840007A0786 /* LoginFormForgotView.swift in Sources */,
+				6DC51C6C2B2C4DA7005C0520 /* Location.swift in Sources */,
 				6DDB48512B2B1D2A007A0786 /* ScreenProgressView.swift in Sources */,
 				6DDB488F2B2B2F23007A0786 /* CircularLoaderView.swift in Sources */,
 				6DDB487F2B2B29BD007A0786 /* TextAnimationView.swift in Sources */,
 				6DDB48A12B2B3175007A0786 /* CirclesLoaderView.swift in Sources */,
 				6DDB48782B2B28DC007A0786 /* DatePickerWithTimeView.swift in Sources */,
 				6DDB48852B2B2AAB007A0786 /* LoadingButtonsView.swift in Sources */,
+				6DC51C6A2B2C4CC6005C0520 /* MapView.swift in Sources */,
+				6DC51C5F2B2C47D6005C0520 /* PetDataSeries.swift in Sources */,
 				6DDB48762B2B289F007A0786 /* DatePickerView.swift in Sources */,
 				6DDB488B2B2B2E18007A0786 /* BarProgressStyle.swift in Sources */,
 				6DDB48BD2B2B6B01007A0786 /* VibrancyView.swift in Sources */,
 				6DDB489B2B2B310A007A0786 /* AnimatedStrokeTriangle.swift in Sources */,
 				6DDB48AC2B2B6600007A0786 /* GradientTextView.swift in Sources */,
+				6DC51C552B2C4757005C0520 /* LineChartView.swift in Sources */,
 				6DDB48932B2B3018007A0786 /* RotateCircleAroundCircle.swift in Sources */,
 				6DDB486E2B2B2756007A0786 /* RadialGradientView.swift in Sources */,
 				6DDB48BA2B2B697E007A0786 /* MaterialsView.swift in Sources */,
