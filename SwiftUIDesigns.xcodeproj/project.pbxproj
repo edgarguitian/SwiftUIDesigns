@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D6CA80A2B35AD2C00D46E6C /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6CA8092B35AD2C00D46E6C /* ExpandableView.swift */; };
+		6D6CA80C2B35B6F000D46E6C /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6CA80B2B35B6F000D46E6C /* ThumbnailView.swift */; };
+		6D6CA80E2B35B70B00D46E6C /* ExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6CA80D2B35B70B00D46E6C /* ExpandedView.swift */; };
+		6D6CA8102B35B8D600D46E6C /* ContentExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6CA80F2B35B8D600D46E6C /* ContentExpandableView.swift */; };
 		6DA29CA62B29CAC800D087C0 /* SwiftUIDesignsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */; };
 		6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CA72B29CAC800D087C0 /* ContentView.swift */; };
 		6DA29CAA2B29CAC900D087C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA29CA92B29CAC900D087C0 /* Assets.xcassets */; };
@@ -86,6 +90,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D6CA8092B35AD2C00D46E6C /* ExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
+		6D6CA80B2B35B6F000D46E6C /* ThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		6D6CA80D2B35B70B00D46E6C /* ExpandedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedView.swift; sourceTree = "<group>"; };
+		6D6CA80F2B35B8D600D46E6C /* ContentExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentExpandableView.swift; sourceTree = "<group>"; };
 		6DA29CA22B29CAC800D087C0 /* SwiftUIDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignsApp.swift; sourceTree = "<group>"; };
 		6DA29CA72B29CAC800D087C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +184,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D6CA8082B35ACEE00D46E6C /* Expandable View */ = {
+			isa = PBXGroup;
+			children = (
+				6D6CA8092B35AD2C00D46E6C /* ExpandableView.swift */,
+				6D6CA80B2B35B6F000D46E6C /* ThumbnailView.swift */,
+				6D6CA80D2B35B70B00D46E6C /* ExpandedView.swift */,
+				6D6CA80F2B35B8D600D46E6C /* ContentExpandableView.swift */,
+			);
+			path = "Expandable View";
+			sourceTree = "<group>";
+		};
 		6DA29C992B29CAC800D087C0 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +245,7 @@
 				6DC51C4A2B2C3FE3005C0520 /* Symbol Effects */,
 				6DC51C4D2B2C4203005C0520 /* Graphs */,
 				6DC51C682B2C4C7E005C0520 /* Map */,
+				6D6CA8082B35ACEE00D46E6C /* Expandable View */,
 				6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */,
 				6DA29CA72B29CAC800D087C0 /* ContentView.swift */,
 				6DA29CB52B29D10500D087C0 /* ContentViewCell.swift */,
@@ -666,13 +686,16 @@
 				6DDB48952B2B3041007A0786 /* MultiCircleLoaderView.swift in Sources */,
 				6DDB48622B2B20E2007A0786 /* ItemModel.swift in Sources */,
 				6DDB48B02B2B6707007A0786 /* UnsplashData.swift in Sources */,
+				6D6CA80C2B35B6F000D46E6C /* ThumbnailView.swift in Sources */,
 				6DDB48872B2B2DD1007A0786 /* GaugeProgressStyle.swift in Sources */,
 				6DDB48532B2B1D75007A0786 /* OtherProgressView.swift in Sources */,
 				6DDB48412B2B0D68007A0786 /* SheetNavigation.swift in Sources */,
 				6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */,
+				6D6CA80E2B35B70B00D46E6C /* ExpandedView.swift in Sources */,
 				6DC51C572B2C4778005C0520 /* BarChartView.swift in Sources */,
 				6DDB487C2B2B295C007A0786 /* DatePickerTimeView.swift in Sources */,
 				6DA29CBA2B29D2D200D087C0 /* SideViewContents.swift in Sources */,
+				6D6CA8102B35B8D600D46E6C /* ContentExpandableView.swift in Sources */,
 				6DDB48822B2B2A43007A0786 /* ButtonStylesView.swift in Sources */,
 				6DC51C5D2B2C47C7005C0520 /* ChartData.swift in Sources */,
 				6DC51C492B2C3CBF005C0520 /* CategoryView.swift in Sources */,
@@ -694,6 +717,7 @@
 				6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */,
 				6DDB48A52B2B31C2007A0786 /* DashCircleLoaderView.swift in Sources */,
 				6DC51C4F2B2C4212005C0520 /* BarMarkView.swift in Sources */,
+				6D6CA80A2B35AD2C00D46E6C /* ExpandableView.swift in Sources */,
 				6DDB48972B2B306B007A0786 /* SquareLoaderView.swift in Sources */,
 				6DDB48A92B2B3212007A0786 /* PieSegmentLoader.swift in Sources */,
 				6DDB48712B2B280F007A0786 /* LoginFormView.swift in Sources */,

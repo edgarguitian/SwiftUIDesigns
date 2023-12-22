@@ -269,6 +269,11 @@ struct ContentView: View {
                             NavigationLink(destination: MapView()) {
                                 ContentViewCell(title: "Map")
                             }
+                            
+                            // MARK: Expandable View
+                            NavigationLink(destination: ContentExpandableView()) {
+                                ContentViewCell(title: "Expandable View")
+                            }
                         }
                         
                         Section(header: Text("Graphs")) {
