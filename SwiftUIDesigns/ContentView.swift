@@ -7,6 +7,16 @@
 
 import SwiftUI
 
+struct SectionItem {
+    let header: String
+    let items: [Item]
+}
+
+struct Item {
+    let title: String
+    let destination: AnyView
+}
+
 struct ContentView: View {
     @State var presentSideMenu = false
     @State var showSheetLargeNavigation: Bool = false
@@ -20,22 +30,87 @@ struct ContentView: View {
     @State var textNormalAlert: String = ""
     @State var isPresentedConfirmationDialog: Bool = false
     @State var textConfirmationDialog: String = ""
-    
+    let itemsStackNavigationSections: [SectionItem] = [
+        SectionItem(header: "Progress View", items: [
+            Item(title: "Progress View", destination: AnyView(ScreenProgressView())),
+            Item(title: "Other Progress View", destination: AnyView(OtherProgressView()))
+        ]),
+        
+        SectionItem(header: "Content Unavailable", items: [
+            Item(title: "Content Unavailable Mail", destination: AnyView(ContentUnavailableNoMailView())),
+            Item(title: "Content Unavailable Inbox", destination: AnyView(ContentUnavailableNoInboxView())),
+            Item(title: "Content Unavailable Results", destination: AnyView(ContentUnavailableNoResultsView())),
+        ]),
+        
+        SectionItem(header: "Other", items: [
+            Item(title: "Async Image", destination: AnyView(AsyncImageView())),
+            Item(title: "3D Tab Bar", destination: AnyView(TabBarT())),
+            Item(title: "Text Editor", destination: AnyView(TextEditorView())),
+            Item(title: "Open Link", destination: AnyView(OpenLinkView())),
+            Item(title: "Scroll View Animation", destination: AnyView(ScrollViewAnimationView())),
+            Item(title: "GridView", destination: AnyView(GridView())),
+            Item(title: "Context Menu", destination: AnyView(ContextMenuView())),
+            Item(title: "Rating View", destination: AnyView(RatingView(rating: 1))),
+            Item(title: "Radial Gradient", destination: AnyView(RadialGradientView())),
+            Item(title: "Text Animation", destination: AnyView(TextAnimationView())),
+            Item(title: "Button Styles", destination: AnyView(ButtonStylesView())),
+            Item(title: "Loading Buttons", destination: AnyView(LoadingButtonsView()))
+        ]),
+        
+        SectionItem(header: "Login", items: [
+            Item(title: "Login Form", destination: AnyView(LoginFormView())),
+            Item(title: "Login Form Forgot", destination: AnyView(LoginFormForgotView()))
+        ]),
+        
+        SectionItem(header: "Picker", items: [
+            Item(title: "Date Picker", destination: AnyView(DatePickerView())),
+            Item(title: "Date Picker with Time", destination: AnyView(DatePickerWithTimeView())),
+            Item(title: "Date Picker with Scroll", destination: AnyView(DatePickerScrollView())),
+            Item(title: "Date Picker Time", destination: AnyView(DatePickerTimeView())),
+        ]),
+        
+        SectionItem(header: "Cool", items: [
+            Item(title: "Gradient Text", destination: AnyView(GradientTextView())),
+            Item(title: "Unsplash API", destination: AnyView(Unsplash())),
+            Item(title: "Drag Gesture", destination: AnyView(DragGestureView())),
+            Item(title: "Staggered Text", destination: AnyView(StaggeredTextView())),
+            Item(title: "Materials", destination: AnyView(MaterialsView())),
+            Item(title: "Vibrancy", destination: AnyView(VibrancyView())),
+            Item(title: "Path Menu", destination: AnyView(PathMenuView())),
+            Item(title: "Vertical Pagging", destination: AnyView(VerticalPaggingView())),
+            Item(title: "Material Saturation", destination: AnyView(MaterialSaturationView())),
+            Item(title: "Top Menu", destination: AnyView(CategoryView(categories: categoriesData) {value in})),
+            Item(title: "Symbol Efects", destination: AnyView(SymbolEffectsView())),
+            Item(title: "Map", destination: AnyView(MapView())),
+            Item(title: "Expandable View", destination: AnyView(ContentExpandableView())),
+            Item(title: "Carousel View", destination: AnyView(CarouselView())),
+            
+        ]),
+        
+        SectionItem(header: "Graphs", items: [
+            Item(title: "Bar Mark", destination: AnyView(BarMarkView())),
+            Item(title: "Heat Map", destination: AnyView(HeatMapView())),
+            Item(title: "Rule Mark", destination: AnyView(RuleMarkView())),
+            Item(title: "Line Chart", destination: AnyView(LineChartView())),
+            Item(title: "Bar Chart", destination: AnyView(BarChartView())),
+            Item(title: "Pie Chart", destination: AnyView(PieChartView())),
+            Item(title: "Gradient Area Chart", destination: AnyView(GradientAreaChartView())),
+            
+        ])
+    ]
     var body: some View {
         ZStack {
             VStack {
                 NavigationStack {
                     List {
                         
-                        Section(header: Text("Progress View")) {
-                            // MARK: Progress View
-                            NavigationLink(destination: ScreenProgressView()) {
-                                ContentViewCell(title: "Progress View")
-                            }
-                            
-                            // MARK: Other Progress View
-                            NavigationLink(destination: OtherProgressView()) {
-                                ContentViewCell(title: "Other Progress View")
+                        ForEach(filteredSections, id: \.header) { section in
+                            Section(header: Text(section.header)) {
+                                ForEach(section.items, id: \.title) { item in
+                                    NavigationLink(destination: item.destination) {
+                                        ContentViewCell(title: item.title)
+                                    }
+                                }
                             }
                         }
                         
@@ -93,225 +168,6 @@ struct ContentView: View {
                             }
                         }
                         
-                        Section(header: Text("Content Unavailable")) {
-                            // MARK: Content Unavailable Mail
-                            NavigationLink(destination: ContentUnavailableNoMailView()) {
-                                ContentViewCell(title: "Content Unavailable Mail")
-                            }
-                            
-                            // MARK: Content Unavailable Inbox
-                            NavigationLink(destination: ContentUnavailableNoInboxView()) {
-                                ContentViewCell(title: "Content Unavailable Inbox")
-                            }
-                            
-                            // MARK: Content Unavailable Results
-                            NavigationLink(destination: ContentUnavailableNoResultsView()) {
-                                ContentViewCell(title: "Content Unavailable Results")
-                            }
-                        }
-                        
-                        Section(header: Text("Other")) {
-                            // MARK: Async Image
-                            NavigationLink(destination: AsyncImageView()) {
-                                ContentViewCell(title: "Async Image")
-                            }
-                            
-                            // MARK: 3D Tab Bar
-                            NavigationLink(destination: TabBarT()) {
-                                ContentViewCell(title: "3D Tab Bar")
-                            }
-                            
-                            // MARK: Text Editor
-                            NavigationLink(destination: TextEditorView()) {
-                                ContentViewCell(title: "Text Editor")
-                            }
-                            
-                            // MARK: Text Editor
-                            NavigationLink(destination: OpenLinkView()) {
-                                ContentViewCell(title: "Open Link")
-                            }
-                            
-                            // MARK: Scroll View Animation
-                            NavigationLink(destination: ScrollViewAnimationView()) {
-                                ContentViewCell(title: "Scroll View Animation")
-                            }
-                            
-                            // MARK: GridView
-                            NavigationLink(destination: GridView()) {
-                                ContentViewCell(title: "GridView")
-                            }
-                            
-                            // MARK: Context Menu
-                            NavigationLink(destination: ContextMenuView()) {
-                                ContentViewCell(title: "Context Menu")
-                            }
-                            
-                            // MARK: Rating View
-                            NavigationLink(destination: RatingView(rating: 1)) {
-                                ContentViewCell(title: "Rating View")
-                            }
-                            
-                            // MARK: Radial Gradient
-                            NavigationLink(destination: RadialGradientView()) {
-                                ContentViewCell(title: "Radial Gradient")
-                            }
-                            
-                            // MARK: Text Animation
-                            NavigationLink(destination: TextAnimationView()) {
-                                ContentViewCell(title: "Text Animation")
-                            }
-                            
-                            // MARK: Button Styles
-                            NavigationLink(destination: ButtonStylesView()) {
-                                ContentViewCell(title: "Button Styles")
-                            }
-                            
-                            // MARK: Loading Buttons
-                            NavigationLink(destination: LoadingButtonsView()) {
-                                ContentViewCell(title: "Loading Buttons")
-                            }
-                            
-                        }
-                        
-                        Section(header: Text("Login")) {
-                            // MARK: Login Form
-                            NavigationLink(destination: LoginFormView()) {
-                                ContentViewCell(title: "Login Form")
-                            }
-                            
-                            // MARK: Login Form Forgot
-                            NavigationLink(destination: LoginFormForgotView()) {
-                                ContentViewCell(title: "Login Form Forgot")
-                            }
-                        }
-                        
-                        Section(header: Text("Picker")) {
-                            // MARK: Date Picker
-                            NavigationLink(destination: DatePickerView()) {
-                                ContentViewCell(title: "Date Picker")
-                            }
-                            
-                            // MARK: Date Picker with Time
-                            NavigationLink(destination: DatePickerWithTimeView()) {
-                                ContentViewCell(title: "Date Picker with Time")
-                            }
-                            
-                            // MARK: Date Picker Scroll
-                            NavigationLink(destination: DatePickerScrollView()) {
-                                ContentViewCell(title: "Date Picker with Scroll")
-                            }
-                            
-                            // MARK: Date Picker Time
-                            NavigationLink(destination: DatePickerTimeView()) {
-                                ContentViewCell(title: "Date Picker Time")
-                            }
-                        }
-                        
-                        Section(header: Text("Cool")) {
-                            // MARK: Gradient Text
-                            NavigationLink(destination: GradientTextView()) {
-                                ContentViewCell(title: "Gradient Text")
-                            }
-                            
-                            // MARK: Unsplash
-                            NavigationLink(destination: Unsplash()) {
-                                ContentViewCell(title: "Unsplash API")
-                            }
-                            
-                            // MARK: Drag Gesture
-                            NavigationLink(destination: DragGestureView()) {
-                                ContentViewCell(title: "Drag Gesture")
-                            }
-                            
-                            // MARK: Staggered Text
-                            NavigationLink(destination: StaggeredTextView()) {
-                                ContentViewCell(title: "Staggered Text")
-                            }
-                            
-                            // MARK: Materials
-                            NavigationLink(destination: MaterialsView()) {
-                                ContentViewCell(title: "Materials")
-                            }
-                            
-                            // MARK: Vibrancy
-                            NavigationLink(destination: VibrancyView()) {
-                                ContentViewCell(title: "Vibrancy")
-                            }
-                            
-                            // MARK: Path Menu
-                            NavigationLink(destination: PathMenuView()) {
-                                ContentViewCell(title: "Path Menu")
-                            }
-                            
-                            // MARK: Vertical Pagging
-                            NavigationLink(destination: VerticalPaggingView()) {
-                                ContentViewCell(title: "Vertical Pagging")
-                            }
-                            
-                            // MARK: Material Saturation
-                            NavigationLink(destination: MaterialSaturationView()) {
-                                ContentViewCell(title: "Material Saturation")
-                            }
-                            
-                            // MARK: Top Menu
-                            NavigationLink(destination: CategoryView(categories: categoriesData) { value in
-                                print(value)
-                            }) {
-                                ContentViewCell(title: "Top Menu")
-                            }
-                            
-                            // MARK: Symbol Effects
-                            NavigationLink(destination: SymbolEffectsView()) {
-                                ContentViewCell(title: "Symbol Efects")
-                            }
-                            
-                            // MARK: Map
-                            NavigationLink(destination: MapView()) {
-                                ContentViewCell(title: "Map")
-                            }
-                            
-                            // MARK: Expandable View
-                            NavigationLink(destination: ContentExpandableView()) {
-                                ContentViewCell(title: "Expandable View")
-                            }
-                        }
-                        
-                        Section(header: Text("Graphs")) {
-                            // MARK: Bar Mark
-                            NavigationLink(destination: BarMarkView()) {
-                                ContentViewCell(title: "Bar Mark")
-                            }
-                            
-                            // MARK: Heat Map
-                            NavigationLink(destination: HeatMapView()) {
-                                ContentViewCell(title: "Heat Map")
-                            }
-                            
-                            // MARK: Rule Mark
-                            NavigationLink(destination: RuleMarkView()) {
-                                ContentViewCell(title: "Rule Mark")
-                            }
-                            
-                            // MARK: Line Chart
-                            NavigationLink(destination: LineChartView()) {
-                                ContentViewCell(title: "Line Chart")
-                            }
-                            
-                            // MARK: Bar Chart
-                            NavigationLink(destination: BarChartView()) {
-                                ContentViewCell(title: "Bar Chart")
-                            }
-                            
-                            // MARK: Pie Chart
-                            NavigationLink(destination: PieChartView()) {
-                                ContentViewCell(title: "Pie Chart")
-                            }
-                            
-                            // MARK: Gradient Area Chart
-                            NavigationLink(destination: GradientAreaChartView()) {
-                                ContentViewCell(title: "Gradient Area Chart")
-                            }
-                        }
                         
                         Section(header: Text("Alerts")) {
                             // MARK: Multiple Options Alert
@@ -487,6 +343,23 @@ struct ContentView: View {
         }
         
         return itemsStackNavigation
+    }
+    
+    var filteredSections: [SectionItem] {
+        guard !searchText.isEmpty else {
+                return itemsStackNavigationSections
+            }
+
+        return itemsStackNavigationSections.compactMap { section in
+                let filteredItems = section.items.filter { $0.title.localizedCaseInsensitiveContains(searchText) }
+                if !filteredItems.isEmpty {
+                    return SectionItem(header: section.header, items: filteredItems)
+                } else if section.header.localizedCaseInsensitiveContains(searchText) {
+                    return SectionItem(header: section.header, items: section.items)
+                } else {
+                    return nil
+                }
+            }
     }
 }
 
