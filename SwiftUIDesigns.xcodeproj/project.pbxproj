@@ -13,6 +13,8 @@
 		6D6CA8102B35B8D600D46E6C /* ContentExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6CA80F2B35B8D600D46E6C /* ContentExpandableView.swift */; };
 		6D74427E2B3EB4CA005D1138 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D74427D2B3EB4CA005D1138 /* CarouselView.swift */; };
 		6D7442802B3EC46D005D1138 /* CarouselViewChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D74427F2B3EC46D005D1138 /* CarouselViewChild.swift */; };
+		6D7442832B3ECF89005D1138 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7442822B3ECF89005D1138 /* TipView.swift */; };
+		6D7442852B3ED350005D1138 /* TipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7442842B3ED34F005D1138 /* TipContentView.swift */; };
 		6DA29CA62B29CAC800D087C0 /* SwiftUIDesignsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */; };
 		6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CA72B29CAC800D087C0 /* ContentView.swift */; };
 		6DA29CAA2B29CAC900D087C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA29CA92B29CAC900D087C0 /* Assets.xcassets */; };
@@ -98,6 +100,8 @@
 		6D6CA80F2B35B8D600D46E6C /* ContentExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentExpandableView.swift; sourceTree = "<group>"; };
 		6D74427D2B3EB4CA005D1138 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		6D74427F2B3EC46D005D1138 /* CarouselViewChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewChild.swift; sourceTree = "<group>"; };
+		6D7442822B3ECF89005D1138 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		6D7442842B3ED34F005D1138 /* TipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipContentView.swift; sourceTree = "<group>"; };
 		6DA29CA22B29CAC800D087C0 /* SwiftUIDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignsApp.swift; sourceTree = "<group>"; };
 		6DA29CA72B29CAC800D087C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -208,6 +212,15 @@
 			path = "Carousel View";
 			sourceTree = "<group>";
 		};
+		6D7442812B3ECF74005D1138 /* Tip View */ = {
+			isa = PBXGroup;
+			children = (
+				6D7442822B3ECF89005D1138 /* TipView.swift */,
+				6D7442842B3ED34F005D1138 /* TipContentView.swift */,
+			);
+			path = "Tip View";
+			sourceTree = "<group>";
+		};
 		6DA29C992B29CAC800D087C0 = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +273,7 @@
 				6DC51C682B2C4C7E005C0520 /* Map */,
 				6D6CA8082B35ACEE00D46E6C /* Expandable View */,
 				6D74427C2B3EB4AB005D1138 /* Carousel View */,
+				6D7442812B3ECF74005D1138 /* Tip View */,
 				6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */,
 				6DA29CA72B29CAC800D087C0 /* ContentView.swift */,
 				6DA29CB52B29D10500D087C0 /* ContentViewCell.swift */,
@@ -705,6 +719,7 @@
 				6DDB48532B2B1D75007A0786 /* OtherProgressView.swift in Sources */,
 				6DDB48412B2B0D68007A0786 /* SheetNavigation.swift in Sources */,
 				6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */,
+				6D7442852B3ED350005D1138 /* TipContentView.swift in Sources */,
 				6D6CA80E2B35B70B00D46E6C /* ExpandedView.swift in Sources */,
 				6DC51C572B2C4778005C0520 /* BarChartView.swift in Sources */,
 				6DDB487C2B2B295C007A0786 /* DatePickerTimeView.swift in Sources */,
@@ -762,6 +777,7 @@
 				6DDB488B2B2B2E18007A0786 /* BarProgressStyle.swift in Sources */,
 				6DDB48BD2B2B6B01007A0786 /* VibrancyView.swift in Sources */,
 				6DDB489B2B2B310A007A0786 /* AnimatedStrokeTriangle.swift in Sources */,
+				6D7442832B3ECF89005D1138 /* TipView.swift in Sources */,
 				6DDB48AC2B2B6600007A0786 /* GradientTextView.swift in Sources */,
 				6DC51C552B2C4757005C0520 /* LineChartView.swift in Sources */,
 				6DDB48932B2B3018007A0786 /* RotateCircleAroundCircle.swift in Sources */,

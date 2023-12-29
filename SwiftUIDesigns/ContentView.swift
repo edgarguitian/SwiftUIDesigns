@@ -84,6 +84,7 @@ struct ContentView: View {
             Item(title: "Map", destination: AnyView(MapView())),
             Item(title: "Expandable View", destination: AnyView(ContentExpandableView())),
             Item(title: "Carousel View", destination: AnyView(CarouselView())),
+            Item(title: "Tip View", destination: AnyView(TipContentView())),
             
         ]),
         
