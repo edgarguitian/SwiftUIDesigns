@@ -85,7 +85,7 @@ struct ContentView: View {
             Item(title: "Expandable View", destination: AnyView(ContentExpandableView())),
             Item(title: "Carousel View", destination: AnyView(CarouselView())),
             Item(title: "Tip View", destination: AnyView(TipContentView())),
-            
+            Item(title: "Hero Animation", destination: AnyView(Home())),
         ]),
         
         SectionItem(header: "Graphs", items: [
