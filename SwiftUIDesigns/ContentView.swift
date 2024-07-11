@@ -31,6 +31,9 @@ struct ContentView: View {
     @State var isPresentedConfirmationDialog: Bool = false
     @State var textConfirmationDialog: String = ""
     let itemsStackNavigationSections: [SectionItem] = [
+        SectionItem(header: "Speech View", items: [
+            Item(title: "Speech View", destination: AnyView(SpeechView()))
+        ]),
         SectionItem(header: "Progress View", items: [
             Item(title: "Progress View", destination: AnyView(ScreenProgressView())),
             Item(title: "Other Progress View", destination: AnyView(OtherProgressView()))
