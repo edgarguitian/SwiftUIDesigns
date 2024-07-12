@@ -70,6 +70,7 @@ struct ContentView: View {
             Item(title: "Date Picker with Time", destination: AnyView(DatePickerWithTimeView())),
             Item(title: "Date Picker with Scroll", destination: AnyView(DatePickerScrollView())),
             Item(title: "Date Picker Time", destination: AnyView(DatePickerTimeView())),
+            Item(title: "Timer Picker", destination: AnyView(CustomTimerPicker()))
         ]),
         
         SectionItem(header: "Cool", items: [
@@ -99,6 +100,7 @@ struct ContentView: View {
             Item(title: "Bar Chart", destination: AnyView(BarChartView())),
             Item(title: "Pie Chart", destination: AnyView(PieChartView())),
             Item(title: "Gradient Area Chart", destination: AnyView(GradientAreaChartView())),
+            Item(title: "Animated Charts", destination: AnyView(AnimatedCharts()))
             
         ])
     ]
