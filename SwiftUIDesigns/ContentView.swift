@@ -46,6 +46,9 @@ struct ContentView: View {
         ]),
         
         SectionItem(header: "Other", items: [
+            Item(title: "NavigationSplitView", destination: AnyView(ThreeColumnSample())),
+            Item(title: "Swipe Actions", destination: AnyView(SwipeActionsView())),
+            Item(title: "Inspector", destination: AnyView(Inspector_View())),
             Item(title: "Async Image", destination: AnyView(AsyncImageView())),
             Item(title: "3D Tab Bar", destination: AnyView(TabBarT())),
             Item(title: "Text Editor", destination: AnyView(TextEditorView())),

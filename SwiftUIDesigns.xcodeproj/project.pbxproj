@@ -98,6 +98,9 @@
 		6DDB48C02B2B6B7A007A0786 /* PathMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48BF2B2B6B7A007A0786 /* PathMenuView.swift */; };
 		6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48C22B2B6BEC007A0786 /* VerticalPaggingView.swift */; };
 		6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDB48C52B2B6CB1007A0786 /* MaterialSaturationView.swift */; };
+		6DE4BA662C413C29005EE9A2 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4BA652C413C29005EE9A2 /* SwipeActionsView.swift */; };
+		6DE4BA692C413DAF005EE9A2 /* Inspector View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4BA682C413DAF005EE9A2 /* Inspector View.swift */; };
+		6DE4BA6C2C413E67005EE9A2 /* ThreeColumnSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE4BA6B2C413E67005EE9A2 /* ThreeColumnSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -193,6 +196,9 @@
 		6DDB48BF2B2B6B7A007A0786 /* PathMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMenuView.swift; sourceTree = "<group>"; };
 		6DDB48C22B2B6BEC007A0786 /* VerticalPaggingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalPaggingView.swift; sourceTree = "<group>"; };
 		6DDB48C52B2B6CB1007A0786 /* MaterialSaturationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialSaturationView.swift; sourceTree = "<group>"; };
+		6DE4BA652C413C29005EE9A2 /* SwipeActionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeActionsView.swift; sourceTree = "<group>"; };
+		6DE4BA682C413DAF005EE9A2 /* Inspector View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Inspector View.swift"; sourceTree = "<group>"; };
+		6DE4BA6B2C413E67005EE9A2 /* ThreeColumnSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeColumnSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +286,9 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6DE4BA6A2C413E4C005EE9A2 /* NavigationSplit */,
+				6DE4BA672C413DA5005EE9A2 /* Inspector */,
+				6DE4BA642C413C1E005EE9A2 /* Swipe Actions */,
 				6DCFB7212C41164F008C0FF7 /* Animated Charts */,
 				6DCFB71E2C4110CE008C0FF7 /* Custom Timer Picker */,
 				6DD3F3482C3FE72700493170 /* Speech */,
@@ -704,6 +713,30 @@
 			path = MaterialSaturation;
 			sourceTree = "<group>";
 		};
+		6DE4BA642C413C1E005EE9A2 /* Swipe Actions */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4BA652C413C29005EE9A2 /* SwipeActionsView.swift */,
+			);
+			path = "Swipe Actions";
+			sourceTree = "<group>";
+		};
+		6DE4BA672C413DA5005EE9A2 /* Inspector */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4BA682C413DAF005EE9A2 /* Inspector View.swift */,
+			);
+			path = Inspector;
+			sourceTree = "<group>";
+		};
+		6DE4BA6A2C413E4C005EE9A2 /* NavigationSplit */ = {
+			isa = PBXGroup;
+			children = (
+				6DE4BA6B2C413E67005EE9A2 /* ThreeColumnSample.swift */,
+			);
+			path = NavigationSplit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -801,7 +834,9 @@
 				6DDB48682B2B265B007A0786 /* ContextMenuView.swift in Sources */,
 				6DDB48B42B2B6893007A0786 /* DragGestureView.swift in Sources */,
 				6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */,
+				6DE4BA662C413C29005EE9A2 /* SwipeActionsView.swift in Sources */,
 				6D74427E2B3EB4CA005D1138 /* CarouselView.swift in Sources */,
+				6DE4BA692C413DAF005EE9A2 /* Inspector View.swift in Sources */,
 				6DCFB7202C4110E7008C0FF7 /* CustomTimerPicker.swift in Sources */,
 				6DC51C592B2C479A005C0520 /* HeatData.swift in Sources */,
 				6DDB485A2B2B1FA5007A0786 /* TextEditorView.swift in Sources */,
@@ -842,6 +877,7 @@
 				6DC51C6C2B2C4DA7005C0520 /* Location.swift in Sources */,
 				6DCFB7252C411766008C0FF7 /* AnimatedCharts.swift in Sources */,
 				6DDB48512B2B1D2A007A0786 /* ScreenProgressView.swift in Sources */,
+				6DE4BA6C2C413E67005EE9A2 /* ThreeColumnSample.swift in Sources */,
 				6DDB488F2B2B2F23007A0786 /* CircularLoaderView.swift in Sources */,
 				6DDB487F2B2B29BD007A0786 /* TextAnimationView.swift in Sources */,
 				6DDB48A12B2B3175007A0786 /* CirclesLoaderView.swift in Sources */,
