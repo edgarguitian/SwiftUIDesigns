@@ -46,6 +46,7 @@ struct ContentView: View {
         ]),
         
         SectionItem(header: "Other", items: [
+            Item(title: "Dropdown", destination: AnyView(DropdownView())),
             Item(title: "NavigationSplitView", destination: AnyView(ThreeColumnSample())),
             Item(title: "Swipe Actions", destination: AnyView(SwipeActionsView())),
             Item(title: "Inspector", destination: AnyView(Inspector_View())),

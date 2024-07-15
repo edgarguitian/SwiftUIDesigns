@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D03B1AE2C4516BD00C184F4 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03B1AD2C4516BD00C184F4 /* Dropdown.swift */; };
+		6D03B1B02C45186F00C184F4 /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D03B1AF2C45186F00C184F4 /* DropdownView.swift */; };
 		6D6ABE7F2B849F550085F6AE /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6ABE7E2B849F550085F6AE /* Today.swift */; };
 		6D6ABE822B84A0590085F6AE /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6ABE812B84A0590085F6AE /* Home.swift */; };
 		6D6ABE842B84A2BE0085F6AE /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6ABE832B84A2BE0085F6AE /* CustomCorner.swift */; };
@@ -104,6 +106,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D03B1AD2C4516BD00C184F4 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
+		6D03B1AF2C45186F00C184F4 /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		6D6ABE7E2B849F550085F6AE /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
 		6D6ABE812B84A0590085F6AE /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		6D6ABE832B84A2BE0085F6AE /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
@@ -212,6 +216,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D03B1AB2C45168100C184F4 /* Custom DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				6D03B1AC2C4516A000C184F4 /* View */,
+			);
+			path = "Custom DropDown";
+			sourceTree = "<group>";
+		};
+		6D03B1AC2C4516A000C184F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D03B1AF2C45186F00C184F4 /* DropdownView.swift */,
+				6D03B1AD2C4516BD00C184F4 /* Dropdown.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D6ABE7A2B849F2C0085F6AE /* Hero Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +307,7 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6D03B1AB2C45168100C184F4 /* Custom DropDown */,
 				6DE4BA6A2C413E4C005EE9A2 /* NavigationSplit */,
 				6DE4BA672C413DA5005EE9A2 /* Inspector */,
 				6DE4BA642C413C1E005EE9A2 /* Swipe Actions */,
@@ -836,6 +858,7 @@
 				6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */,
 				6DE4BA662C413C29005EE9A2 /* SwipeActionsView.swift in Sources */,
 				6D74427E2B3EB4CA005D1138 /* CarouselView.swift in Sources */,
+				6D03B1B02C45186F00C184F4 /* DropdownView.swift in Sources */,
 				6DE4BA692C413DAF005EE9A2 /* Inspector View.swift in Sources */,
 				6DCFB7202C4110E7008C0FF7 /* CustomTimerPicker.swift in Sources */,
 				6DC51C592B2C479A005C0520 /* HeatData.swift in Sources */,
@@ -877,6 +900,7 @@
 				6DC51C6C2B2C4DA7005C0520 /* Location.swift in Sources */,
 				6DCFB7252C411766008C0FF7 /* AnimatedCharts.swift in Sources */,
 				6DDB48512B2B1D2A007A0786 /* ScreenProgressView.swift in Sources */,
+				6D03B1AE2C4516BD00C184F4 /* Dropdown.swift in Sources */,
 				6DE4BA6C2C413E67005EE9A2 /* ThreeColumnSample.swift in Sources */,
 				6DDB488F2B2B2F23007A0786 /* CircularLoaderView.swift in Sources */,
 				6DDB487F2B2B29BD007A0786 /* TextAnimationView.swift in Sources */,
@@ -1040,6 +1064,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1069,6 +1094,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
