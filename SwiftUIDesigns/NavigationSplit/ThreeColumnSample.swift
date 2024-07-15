@@ -17,7 +17,7 @@ struct ThreeColumnSample: View {
             List(SampleData.firstScreenData, selection: $firstSelectedDataItem) { item in
                 NavigationLink(item.text, value: item)
             }
-            .navigationTitle("Sidebar")
+            .navigationTitle("Simple Navigation")
         } content: {
             VStack(alignment: .leading) {
                 if firstSelectedDataItem != nil {
@@ -54,20 +54,24 @@ struct DataModel: Identifiable, Hashable {
 
 class SampleData {
     static let firstScreenData = [
-        DataModel(text: "🚂 Trains"),
-        DataModel(text: "✈️ Planes"),
-        DataModel(text: "🚗 Automobiles"),
+        DataModel(text: "⚽️ Fútbol"),
+        DataModel(text: "🎾 Tenis"),
+        DataModel(text: "🏀 Baloncesto"),
+        DataModel(text: "🏐 Voleibol"),
+        DataModel(text: "🏊‍♂️ Natación")
     ]
     
     static let secondScreenData = [
-        DataModel(text: "Slow"),
-        DataModel(text: "Regular"),
-        DataModel(text: "Fast"),
+        DataModel(text: "🐢 Lento"),
+        DataModel(text: "🚶‍♂️ Moderado"),
+        DataModel(text: "🏃‍♂️ Rápido"),
+        DataModel(text: "🚀 Muy rápido")
     ]
     
     static let lastScreenData = [
-        DataModel(text: "Wrong"),
-        DataModel(text: "So-so"),
-        DataModel(text: "Right"),
+        DataModel(text: "❌ Incorrecto"),
+        DataModel(text: "🤔 Regular"),
+        DataModel(text: "✔️ Correcto"),
+        DataModel(text: "🌟 Excelente")
     ]
 }
