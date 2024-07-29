@@ -31,6 +31,10 @@ struct ContentView: View {
     @State var isPresentedConfirmationDialog: Bool = false
     @State var textConfirmationDialog: String = ""
     let itemsStackNavigationSections: [SectionItem] = [
+        SectionItem(header: "Carousel", items: [
+            Item(title: "Cover Carousel", destination: AnyView(CustomCarouselContainer())),
+            Item(title: "Carousel View", destination: AnyView(CarouselView())),
+        ]),
         SectionItem(header: "Speech View", items: [
             Item(title: "Speech View", destination: AnyView(SpeechView()))
         ]),
@@ -46,6 +50,7 @@ struct ContentView: View {
         ]),
         
         SectionItem(header: "Other", items: [
+            Item(title: "Shape Morphing", destination: AnyView(IntroView())),
             Item(title: "Dropdown", destination: AnyView(DropdownView())),
             Item(title: "NavigationSplitView", destination: AnyView(ThreeColumnSample())),
             Item(title: "Swipe Actions", destination: AnyView(SwipeActionsView())),
@@ -91,7 +96,6 @@ struct ContentView: View {
             Item(title: "Symbol Efects", destination: AnyView(SymbolEffectsView())),
             Item(title: "Map", destination: AnyView(MapView())),
             Item(title: "Expandable View", destination: AnyView(ContentExpandableView())),
-            Item(title: "Carousel View", destination: AnyView(CarouselView())),
             Item(title: "Tip View", destination: AnyView(TipContentView())),
             Item(title: "Hero Animation", destination: AnyView(Home())),
         ]),
