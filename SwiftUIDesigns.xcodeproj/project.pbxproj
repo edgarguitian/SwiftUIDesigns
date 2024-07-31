@@ -15,6 +15,8 @@
 		6D2743872C5A4D720047F37B /* ShowCaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743862C5A4D720047F37B /* ShowCaseHelper.swift */; };
 		6D2743892C5A4DC80047F37B /* ShowCaseHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743882C5A4DC80047F37B /* ShowCaseHome.swift */; };
 		6D27438B2C5A4FA90047F37B /* HighlightShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27438A2C5A4FA90047F37B /* HighlightShowCase.swift */; };
+		6D2743902C5A5EF00047F37B /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27438F2C5A5EF00047F37B /* Intro.swift */; };
+		6D2743922C5A5FB70047F37B /* AppIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743912C5A5FB70047F37B /* AppIntroView.swift */; };
 		6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D12C53BB0300871B6C /* CarouselImage.swift */; };
 		6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */; };
 		6D43F9D62C53BCBD00871B6C /* CustomCarouselContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */; };
@@ -124,6 +126,8 @@
 		6D2743862C5A4D720047F37B /* ShowCaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseHelper.swift; sourceTree = "<group>"; };
 		6D2743882C5A4DC80047F37B /* ShowCaseHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCaseHome.swift; sourceTree = "<group>"; };
 		6D27438A2C5A4FA90047F37B /* HighlightShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightShowCase.swift; sourceTree = "<group>"; };
+		6D27438F2C5A5EF00047F37B /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		6D2743912C5A5FB70047F37B /* AppIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroView.swift; sourceTree = "<group>"; };
 		6D43F9D12C53BB0300871B6C /* CarouselImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselImage.swift; sourceTree = "<group>"; };
 		6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselContainer.swift; sourceTree = "<group>"; };
@@ -289,6 +293,31 @@
 			path = "Show Case";
 			sourceTree = "<group>";
 		};
+		6D27438C2C5A5ED90047F37B /* App Intro Animation */ = {
+			isa = PBXGroup;
+			children = (
+				6D27438E2C5A5EE70047F37B /* View */,
+				6D27438D2C5A5EE20047F37B /* Model */,
+			);
+			path = "App Intro Animation";
+			sourceTree = "<group>";
+		};
+		6D27438D2C5A5EE20047F37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D27438F2C5A5EF00047F37B /* Intro.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D27438E2C5A5EE70047F37B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743912C5A5FB70047F37B /* AppIntroView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D43F9CE2C53BAC400871B6C /* Cover Carousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +418,7 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6D27438C2C5A5ED90047F37B /* App Intro Animation */,
 				6D2743852C5A4D5D0047F37B /* Show Case */,
 				6D197A2B2C57998A003E2545 /* Shape Morphing Effect */,
 				6D43F9CE2C53BAC400871B6C /* Cover Carousel */,
@@ -962,6 +992,7 @@
 				6DD3F34A2C3FE73200493170 /* SpeechView.swift in Sources */,
 				6D2743892C5A4DC80047F37B /* ShowCaseHome.swift in Sources */,
 				6DDB487A2B2B290E007A0786 /* DatePickerScrollView.swift in Sources */,
+				6D2743922C5A5FB70047F37B /* AppIntroView.swift in Sources */,
 				6DDB486B2B2B26E8007A0786 /* RatingView.swift in Sources */,
 				6D43F9D62C53BCBD00871B6C /* CustomCarouselContainer.swift in Sources */,
 				6DDB48A72B2B31E8007A0786 /* BottomToTopFill.swift in Sources */,
@@ -1010,6 +1041,7 @@
 				6D7442832B3ECF89005D1138 /* TipView.swift in Sources */,
 				6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */,
 				6DDB48AC2B2B6600007A0786 /* GradientTextView.swift in Sources */,
+				6D2743902C5A5EF00047F37B /* Intro.swift in Sources */,
 				6DC51C552B2C4757005C0520 /* LineChartView.swift in Sources */,
 				6DDB48932B2B3018007A0786 /* RotateCircleAroundCircle.swift in Sources */,
 				6DDB486E2B2B2756007A0786 /* RadialGradientView.swift in Sources */,

@@ -31,6 +31,10 @@ struct ContentView: View {
     @State var isPresentedConfirmationDialog: Bool = false
     @State var textConfirmationDialog: String = ""
     let itemsStackNavigationSections: [SectionItem] = [
+        SectionItem(header: "App Intro", items: [
+            Item(title: "App Intro View", destination: AnyView(AppIntroView())),
+
+        ]),
         SectionItem(header: "Carousel", items: [
             Item(title: "Cover Carousel", destination: AnyView(CustomCarouselContainer())),
             Item(title: "Carousel View", destination: AnyView(CarouselView())),
@@ -219,6 +223,7 @@ struct ContentView: View {
                         
                         
                     }
+                    
                     // MARK: Refreshable
                     .refreshable {
                         isLoading = true
@@ -233,13 +238,13 @@ struct ContentView: View {
                     .navigationTitle(isLoading ? "LOADING..." : "Refresable")
                     
                 }
-                .padding(.top, 50)
+                //.padding(.top, 50)
                 // MARK: Search Bar
                 .searchable(text: $searchText)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             // MARK: Side Menu
-            .overlay(
+            /*.overlay(
                 ZStack {
                     HStack {
                         Button {
@@ -261,7 +266,7 @@ struct ContentView: View {
                     .frame(height: 56)
                     .zIndex(1)
                     .shadow(radius: 0.3)
-                , alignment: .top)
+                , alignment: .top)*/
             // MARK: Sheet Large Navigation
             .sheet(isPresented: $showSheetLargeNavigation, content: {
                 SheetLargeNavigation()
@@ -340,7 +345,7 @@ struct ContentView: View {
             
             
             
-            SideMenu()
+            // SideMenu()
         }
         
         .frame(maxWidth: .infinity)
