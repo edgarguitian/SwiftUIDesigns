@@ -43,6 +43,11 @@ struct ContentView: View {
             Item(title: "Other Progress View", destination: AnyView(OtherProgressView()))
         ]),
         
+        SectionItem(header: "Loading", items: [
+            Item(title: "Loading Buttons", destination: AnyView(LoadingButtonsView())),
+            Item(title: "Loading Animation", destination: AnyView(LoadingAnimationView()))
+        ]),
+        
         SectionItem(header: "Content Unavailable", items: [
             Item(title: "Content Unavailable Mail", destination: AnyView(ContentUnavailableNoMailView())),
             Item(title: "Content Unavailable Inbox", destination: AnyView(ContentUnavailableNoInboxView())),
@@ -65,8 +70,7 @@ struct ContentView: View {
             Item(title: "Rating View", destination: AnyView(RatingView(rating: 1))),
             Item(title: "Radial Gradient", destination: AnyView(RadialGradientView())),
             Item(title: "Text Animation", destination: AnyView(TextAnimationView())),
-            Item(title: "Button Styles", destination: AnyView(ButtonStylesView())),
-            Item(title: "Loading Buttons", destination: AnyView(LoadingButtonsView()))
+            Item(title: "Button Styles", destination: AnyView(ButtonStylesView()))
         ]),
         
         SectionItem(header: "Login", items: [

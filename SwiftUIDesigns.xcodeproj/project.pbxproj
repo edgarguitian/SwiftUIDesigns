@@ -26,6 +26,7 @@
 		6D7442802B3EC46D005D1138 /* CarouselViewChild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D74427F2B3EC46D005D1138 /* CarouselViewChild.swift */; };
 		6D7442832B3ECF89005D1138 /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7442822B3ECF89005D1138 /* TipView.swift */; };
 		6D7442852B3ED350005D1138 /* TipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7442842B3ED34F005D1138 /* TipContentView.swift */; };
+		6D89056E2C5A433500F97CA6 /* LoadingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D89056D2C5A433500F97CA6 /* LoadingAnimationView.swift */; };
 		6DA29CA62B29CAC800D087C0 /* SwiftUIDesignsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */; };
 		6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA29CA72B29CAC800D087C0 /* ContentView.swift */; };
 		6DA29CAA2B29CAC900D087C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA29CA92B29CAC900D087C0 /* Assets.xcassets */; };
@@ -131,6 +132,7 @@
 		6D74427F2B3EC46D005D1138 /* CarouselViewChild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewChild.swift; sourceTree = "<group>"; };
 		6D7442822B3ECF89005D1138 /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
 		6D7442842B3ED34F005D1138 /* TipContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipContentView.swift; sourceTree = "<group>"; };
+		6D89056D2C5A433500F97CA6 /* LoadingAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimationView.swift; sourceTree = "<group>"; };
 		6DA29CA22B29CAC800D087C0 /* SwiftUIDesigns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDesigns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA29CA52B29CAC800D087C0 /* SwiftUIDesignsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDesignsApp.swift; sourceTree = "<group>"; };
 		6DA29CA72B29CAC800D087C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -724,6 +726,7 @@
 				6DDB48A42B2B31C2007A0786 /* DashCircleLoaderView.swift */,
 				6DDB48A62B2B31E8007A0786 /* BottomToTopFill.swift */,
 				6DDB48A82B2B3212007A0786 /* PieSegmentLoader.swift */,
+				6D89056D2C5A433500F97CA6 /* LoadingAnimationView.swift */,
 			);
 			path = LoadingButtons;
 			sourceTree = "<group>";
@@ -964,6 +967,7 @@
 				6DDB48602B2B2082007A0786 /* ScrollViewAnimationView.swift in Sources */,
 				6DC51C532B2C473C005C0520 /* RuleMarkView.swift in Sources */,
 				6DDB48AE2B2B66D5007A0786 /* Unsplash.swift in Sources */,
+				6D89056E2C5A433500F97CA6 /* LoadingAnimationView.swift in Sources */,
 				6DC51C5B2B2C47B3005C0520 /* PetData.swift in Sources */,
 				6DDB48732B2B2840007A0786 /* LoginFormForgotView.swift in Sources */,
 				6DC51C6C2B2C4DA7005C0520 /* Location.swift in Sources */,
