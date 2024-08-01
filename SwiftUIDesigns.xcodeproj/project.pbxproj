@@ -21,6 +21,11 @@
 		6D2743992C5B6B240047F37B /* LoginIntroAnimationHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743982C5B6B240047F37B /* LoginIntroAnimationHome.swift */; };
 		6D27439B2C5B6F430047F37B /* CustomIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27439A2C5B6F430047F37B /* CustomIndicatorView.swift */; };
 		6D27439D2C5B71950047F37B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27439C2C5B71950047F37B /* CustomTextField.swift */; };
+		6D2743A22C5B78280047F37B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A12C5B78280047F37B /* Person.swift */; };
+		6D2743A42C5B789F0047F37B /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A32C5B789F0047F37B /* CustomCardView.swift */; };
+		6D2743A62C5B78AE0047F37B /* PersonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A52C5B78AE0047F37B /* PersonCardView.swift */; };
+		6D2743A82C5B7CB50047F37B /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A72C5B7CB50047F37B /* Wallet.swift */; };
+		6D2743AA2C5B7D250047F37B /* WalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A92C5B7D250047F37B /* WalletCardView.swift */; };
 		6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D12C53BB0300871B6C /* CarouselImage.swift */; };
 		6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */; };
 		6D43F9D62C53BCBD00871B6C /* CustomCarouselContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */; };
@@ -136,6 +141,11 @@
 		6D2743982C5B6B240047F37B /* LoginIntroAnimationHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroAnimationHome.swift; sourceTree = "<group>"; };
 		6D27439A2C5B6F430047F37B /* CustomIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicatorView.swift; sourceTree = "<group>"; };
 		6D27439C2C5B71950047F37B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		6D2743A12C5B78280047F37B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6D2743A32C5B789F0047F37B /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		6D2743A52C5B78AE0047F37B /* PersonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardView.swift; sourceTree = "<group>"; };
+		6D2743A72C5B7CB50047F37B /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		6D2743A92C5B7D250047F37B /* WalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardView.swift; sourceTree = "<group>"; };
 		6D43F9D12C53BB0300871B6C /* CarouselImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselImage.swift; sourceTree = "<group>"; };
 		6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselContainer.swift; sourceTree = "<group>"; };
@@ -353,6 +363,34 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6D27439E2C5B78050047F37B /* CustomCardView */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743A02C5B78140047F37B /* View */,
+				6D27439F2C5B780F0047F37B /* Model */,
+			);
+			path = CustomCardView;
+			sourceTree = "<group>";
+		};
+		6D27439F2C5B780F0047F37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743A12C5B78280047F37B /* Person.swift */,
+				6D2743A72C5B7CB50047F37B /* Wallet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D2743A02C5B78140047F37B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743A32C5B789F0047F37B /* CustomCardView.swift */,
+				6D2743A52C5B78AE0047F37B /* PersonCardView.swift */,
+				6D2743A92C5B7D250047F37B /* WalletCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D43F9CE2C53BAC400871B6C /* Cover Carousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +491,7 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6D27439E2C5B78050047F37B /* CustomCardView */,
 				6D2743932C5B69FE0047F37B /* Login Intro Animation */,
 				6D27438C2C5A5ED90047F37B /* App Intro Animation */,
 				6D2743852C5A4D5D0047F37B /* Show Case */,
@@ -987,9 +1026,11 @@
 				6DC51C4C2B2C3FF5005C0520 /* SymbolEffectsView.swift in Sources */,
 				6D197A2F2C5799A8003E2545 /* Page.swift in Sources */,
 				6DDB48B72B2B68F7007A0786 /* StaggeredTextView.swift in Sources */,
+				6D2743A82C5B7CB50047F37B /* Wallet.swift in Sources */,
 				6D2743872C5A4D720047F37B /* ShowCaseHelper.swift in Sources */,
 				6DDB48912B2B2F63007A0786 /* RotateImageLoaderView.swift in Sources */,
 				6DDB48952B2B3041007A0786 /* MultiCircleLoaderView.swift in Sources */,
+				6D2743A22C5B78280047F37B /* Person.swift in Sources */,
 				6DDB48622B2B20E2007A0786 /* ItemModel.swift in Sources */,
 				6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */,
 				6DDB48B02B2B6707007A0786 /* UnsplashData.swift in Sources */,
@@ -1011,6 +1052,7 @@
 				6DC51C492B2C3CBF005C0520 /* CategoryView.swift in Sources */,
 				6DDB48682B2B265B007A0786 /* ContextMenuView.swift in Sources */,
 				6DDB48B42B2B6893007A0786 /* DragGestureView.swift in Sources */,
+				6D2743A42C5B789F0047F37B /* CustomCardView.swift in Sources */,
 				6DA29CA82B29CAC800D087C0 /* ContentView.swift in Sources */,
 				6DE4BA662C413C29005EE9A2 /* SwipeActionsView.swift in Sources */,
 				6D74427E2B3EB4CA005D1138 /* CarouselView.swift in Sources */,
@@ -1040,6 +1082,7 @@
 				6DDB48A32B2B319A007A0786 /* ModernCircularLoader.swift in Sources */,
 				6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */,
 				6DDB48A52B2B31C2007A0786 /* DashCircleLoaderView.swift in Sources */,
+				6D2743A62C5B78AE0047F37B /* PersonCardView.swift in Sources */,
 				6DC51C4F2B2C4212005C0520 /* BarMarkView.swift in Sources */,
 				6D6CA80A2B35AD2C00D46E6C /* ExpandableView.swift in Sources */,
 				6DDB48972B2B306B007A0786 /* SquareLoaderView.swift in Sources */,
@@ -1054,6 +1097,7 @@
 				6DCFB7232C41165E008C0FF7 /* Download.swift in Sources */,
 				6DDB489D2B2B3128007A0786 /* AnimatedStrokeCircle.swift in Sources */,
 				6DC51C612B2C47FB005C0520 /* PieChartView.swift in Sources */,
+				6D2743AA2C5B7D250047F37B /* WalletCardView.swift in Sources */,
 				6DDB48602B2B2082007A0786 /* ScrollViewAnimationView.swift in Sources */,
 				6DC51C532B2C473C005C0520 /* RuleMarkView.swift in Sources */,
 				6DDB48AE2B2B66D5007A0786 /* Unsplash.swift in Sources */,
