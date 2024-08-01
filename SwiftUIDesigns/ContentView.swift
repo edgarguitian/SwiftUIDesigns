@@ -33,7 +33,7 @@ struct ContentView: View {
     let itemsStackNavigationSections: [SectionItem] = [
         SectionItem(header: "App Intro", items: [
             Item(title: "App Intro View", destination: AnyView(AppIntroView())),
-
+            Item(title: "Login Intro View", destination: AnyView(LoginIntroAnimationHome())),
         ]),
         SectionItem(header: "Carousel", items: [
             Item(title: "Cover Carousel", destination: AnyView(CustomCarouselContainer())),

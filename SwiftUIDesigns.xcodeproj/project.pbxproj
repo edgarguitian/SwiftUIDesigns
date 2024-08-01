@@ -17,6 +17,10 @@
 		6D27438B2C5A4FA90047F37B /* HighlightShowCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27438A2C5A4FA90047F37B /* HighlightShowCase.swift */; };
 		6D2743902C5A5EF00047F37B /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27438F2C5A5EF00047F37B /* Intro.swift */; };
 		6D2743922C5A5FB70047F37B /* AppIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743912C5A5FB70047F37B /* AppIntroView.swift */; };
+		6D2743972C5B6A1A0047F37B /* PageIntro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743962C5B6A1A0047F37B /* PageIntro.swift */; };
+		6D2743992C5B6B240047F37B /* LoginIntroAnimationHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743982C5B6B240047F37B /* LoginIntroAnimationHome.swift */; };
+		6D27439B2C5B6F430047F37B /* CustomIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27439A2C5B6F430047F37B /* CustomIndicatorView.swift */; };
+		6D27439D2C5B71950047F37B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D27439C2C5B71950047F37B /* CustomTextField.swift */; };
 		6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D12C53BB0300871B6C /* CarouselImage.swift */; };
 		6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */; };
 		6D43F9D62C53BCBD00871B6C /* CustomCarouselContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */; };
@@ -128,6 +132,10 @@
 		6D27438A2C5A4FA90047F37B /* HighlightShowCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightShowCase.swift; sourceTree = "<group>"; };
 		6D27438F2C5A5EF00047F37B /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		6D2743912C5A5FB70047F37B /* AppIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntroView.swift; sourceTree = "<group>"; };
+		6D2743962C5B6A1A0047F37B /* PageIntro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIntro.swift; sourceTree = "<group>"; };
+		6D2743982C5B6B240047F37B /* LoginIntroAnimationHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIntroAnimationHome.swift; sourceTree = "<group>"; };
+		6D27439A2C5B6F430047F37B /* CustomIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomIndicatorView.swift; sourceTree = "<group>"; };
+		6D27439C2C5B71950047F37B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		6D43F9D12C53BB0300871B6C /* CarouselImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselImage.swift; sourceTree = "<group>"; };
 		6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselContainer.swift; sourceTree = "<group>"; };
@@ -318,6 +326,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6D2743932C5B69FE0047F37B /* Login Intro Animation */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743952C5B6A0C0047F37B /* View */,
+				6D2743942C5B6A070047F37B /* Model */,
+			);
+			path = "Login Intro Animation";
+			sourceTree = "<group>";
+		};
+		6D2743942C5B6A070047F37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743962C5B6A1A0047F37B /* PageIntro.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D2743952C5B6A0C0047F37B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743982C5B6B240047F37B /* LoginIntroAnimationHome.swift */,
+				6D27439A2C5B6F430047F37B /* CustomIndicatorView.swift */,
+				6D27439C2C5B71950047F37B /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		6D43F9CE2C53BAC400871B6C /* Cover Carousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,6 +453,7 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6D2743932C5B69FE0047F37B /* Login Intro Animation */,
 				6D27438C2C5A5ED90047F37B /* App Intro Animation */,
 				6D2743852C5A4D5D0047F37B /* Show Case */,
 				6D197A2B2C57998A003E2545 /* Shape Morphing Effect */,
@@ -963,6 +999,7 @@
 				6DDB48412B2B0D68007A0786 /* SheetNavigation.swift in Sources */,
 				6DDB48C32B2B6BEC007A0786 /* VerticalPaggingView.swift in Sources */,
 				6D7442852B3ED350005D1138 /* TipContentView.swift in Sources */,
+				6D2743972C5B6A1A0047F37B /* PageIntro.swift in Sources */,
 				6D6CA80E2B35B70B00D46E6C /* ExpandedView.swift in Sources */,
 				6DC51C572B2C4778005C0520 /* BarChartView.swift in Sources */,
 				6DDB487C2B2B295C007A0786 /* DatePickerTimeView.swift in Sources */,
@@ -978,6 +1015,7 @@
 				6DE4BA662C413C29005EE9A2 /* SwipeActionsView.swift in Sources */,
 				6D74427E2B3EB4CA005D1138 /* CarouselView.swift in Sources */,
 				6D03B1B02C45186F00C184F4 /* DropdownView.swift in Sources */,
+				6D27439D2C5B71950047F37B /* CustomTextField.swift in Sources */,
 				6DE4BA692C413DAF005EE9A2 /* Inspector View.swift in Sources */,
 				6DCFB7202C4110E7008C0FF7 /* CustomTimerPicker.swift in Sources */,
 				6DC51C592B2C479A005C0520 /* HeatData.swift in Sources */,
@@ -1011,6 +1049,7 @@
 				6DDB48472B2B1ADD007A0786 /* ContentUnavailableNoMailView.swift in Sources */,
 				6DDB48992B2B30DC007A0786 /* AnimatedStrokeRectangle.swift in Sources */,
 				6DA29CB62B29D10500D087C0 /* ContentViewCell.swift in Sources */,
+				6D27439B2C5B6F430047F37B /* CustomIndicatorView.swift in Sources */,
 				6DDB485D2B2B202F007A0786 /* OpenLinkView.swift in Sources */,
 				6DCFB7232C41165E008C0FF7 /* Download.swift in Sources */,
 				6DDB489D2B2B3128007A0786 /* AnimatedStrokeCircle.swift in Sources */,
@@ -1050,6 +1089,7 @@
 				6D197A332C579B27003E2545 /* MorphingSymbolView.swift in Sources */,
 				6DDB48652B2B25C2007A0786 /* GridView.swift in Sources */,
 				6DDB488D2B2B2EB8007A0786 /* CustomProgressView.swift in Sources */,
+				6D2743992C5B6B240047F37B /* LoginIntroAnimationHome.swift in Sources */,
 				6DA29CA62B29CAC800D087C0 /* SwiftUIDesignsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
