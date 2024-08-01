@@ -26,6 +26,8 @@
 		6D2743A62C5B78AE0047F37B /* PersonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A52C5B78AE0047F37B /* PersonCardView.swift */; };
 		6D2743A82C5B7CB50047F37B /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A72C5B7CB50047F37B /* Wallet.swift */; };
 		6D2743AA2C5B7D250047F37B /* WalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A92C5B7D250047F37B /* WalletCardView.swift */; };
+		6D2743AF2C5B8AE50047F37B /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743AE2C5B8AE50047F37B /* TripCard.swift */; };
+		6D2743B12C5B8B660047F37B /* ParallaxHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743B02C5B8B660047F37B /* ParallaxHome.swift */; };
 		6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D12C53BB0300871B6C /* CarouselImage.swift */; };
 		6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */; };
 		6D43F9D62C53BCBD00871B6C /* CustomCarouselContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */; };
@@ -146,6 +148,8 @@
 		6D2743A52C5B78AE0047F37B /* PersonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardView.swift; sourceTree = "<group>"; };
 		6D2743A72C5B7CB50047F37B /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		6D2743A92C5B7D250047F37B /* WalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardView.swift; sourceTree = "<group>"; };
+		6D2743AE2C5B8AE50047F37B /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
+		6D2743B02C5B8B660047F37B /* ParallaxHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHome.swift; sourceTree = "<group>"; };
 		6D43F9D12C53BB0300871B6C /* CarouselImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselImage.swift; sourceTree = "<group>"; };
 		6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselContainer.swift; sourceTree = "<group>"; };
@@ -391,6 +395,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6D2743AB2C5B8AC30047F37B /* Parallax Carousel Scroll */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743AD2C5B8ADB0047F37B /* Model */,
+				6D2743AC2C5B8AD10047F37B /* View */,
+			);
+			path = "Parallax Carousel Scroll";
+			sourceTree = "<group>";
+		};
+		6D2743AC2C5B8AD10047F37B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743B02C5B8B660047F37B /* ParallaxHome.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6D2743AD2C5B8ADB0047F37B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D2743AE2C5B8AE50047F37B /* TripCard.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6D43F9CE2C53BAC400871B6C /* Cover Carousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +520,7 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6D2743AB2C5B8AC30047F37B /* Parallax Carousel Scroll */,
 				6D27439E2C5B78050047F37B /* CustomCardView */,
 				6D2743932C5B69FE0047F37B /* Login Intro Animation */,
 				6D27438C2C5A5ED90047F37B /* App Intro Animation */,
@@ -1030,6 +1060,7 @@
 				6D2743872C5A4D720047F37B /* ShowCaseHelper.swift in Sources */,
 				6DDB48912B2B2F63007A0786 /* RotateImageLoaderView.swift in Sources */,
 				6DDB48952B2B3041007A0786 /* MultiCircleLoaderView.swift in Sources */,
+				6D2743AF2C5B8AE50047F37B /* TripCard.swift in Sources */,
 				6D2743A22C5B78280047F37B /* Person.swift in Sources */,
 				6DDB48622B2B20E2007A0786 /* ItemModel.swift in Sources */,
 				6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */,
@@ -1079,6 +1110,7 @@
 				6DDB48562B2B1DD2007A0786 /* AsyncImageView.swift in Sources */,
 				6DDB48C02B2B6B7A007A0786 /* PathMenuView.swift in Sources */,
 				6DA29CB82B29D1F100D087C0 /* SideMenu.swift in Sources */,
+				6D2743B12C5B8B660047F37B /* ParallaxHome.swift in Sources */,
 				6DDB48A32B2B319A007A0786 /* ModernCircularLoader.swift in Sources */,
 				6DDB48C62B2B6CB1007A0786 /* MaterialSaturationView.swift in Sources */,
 				6DDB48A52B2B31C2007A0786 /* DashCircleLoaderView.swift in Sources */,

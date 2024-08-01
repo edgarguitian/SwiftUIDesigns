@@ -41,6 +41,7 @@ struct ContentView: View {
         SectionItem(header: "Carousel", items: [
             Item(title: "Cover Carousel", destination: AnyView(CustomCarouselContainer())),
             Item(title: "Carousel View", destination: AnyView(CarouselView())),
+            Item(title: "Parallax Carousel", destination: AnyView(ParallaxHome())),
         ]),
         SectionItem(header: "Speech View", items: [
             Item(title: "Speech View", destination: AnyView(SpeechView()))
