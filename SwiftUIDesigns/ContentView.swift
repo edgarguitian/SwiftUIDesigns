@@ -63,6 +63,7 @@ struct ContentView: View {
         ]),
         
         SectionItem(header: "Other", items: [
+            Item(title: "Floating Sheet", destination: AnyView(FloatingSheetHome())),
             Item(title: "Show Case", destination: AnyView(ShowCaseHome())),
             Item(title: "Shape Morphing", destination: AnyView(IntroView())),
             Item(title: "Dropdown", destination: AnyView(DropdownView())),

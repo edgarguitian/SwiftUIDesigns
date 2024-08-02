@@ -28,6 +28,8 @@
 		6D2743AA2C5B7D250047F37B /* WalletCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743A92C5B7D250047F37B /* WalletCardView.swift */; };
 		6D2743AF2C5B8AE50047F37B /* TripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743AE2C5B8AE50047F37B /* TripCard.swift */; };
 		6D2743B12C5B8B660047F37B /* ParallaxHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2743B02C5B8B660047F37B /* ParallaxHome.swift */; };
+		6D3AD2BA2C5CD97200598FBD /* FloatingSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3AD2B92C5CD97200598FBD /* FloatingSheet.swift */; };
+		6D3AD2BC2C5CDA0E00598FBD /* FloatingSheetHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3AD2BB2C5CDA0E00598FBD /* FloatingSheetHome.swift */; };
 		6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D12C53BB0300871B6C /* CarouselImage.swift */; };
 		6D43F9D42C53BB6000871B6C /* CustomCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */; };
 		6D43F9D62C53BCBD00871B6C /* CustomCarouselContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */; };
@@ -150,6 +152,8 @@
 		6D2743A92C5B7D250047F37B /* WalletCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCardView.swift; sourceTree = "<group>"; };
 		6D2743AE2C5B8AE50047F37B /* TripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCard.swift; sourceTree = "<group>"; };
 		6D2743B02C5B8B660047F37B /* ParallaxHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxHome.swift; sourceTree = "<group>"; };
+		6D3AD2B92C5CD97200598FBD /* FloatingSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSheet.swift; sourceTree = "<group>"; };
+		6D3AD2BB2C5CDA0E00598FBD /* FloatingSheetHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSheetHome.swift; sourceTree = "<group>"; };
 		6D43F9D12C53BB0300871B6C /* CarouselImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselImage.swift; sourceTree = "<group>"; };
 		6D43F9D32C53BB6000871B6C /* CustomCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarousel.swift; sourceTree = "<group>"; };
 		6D43F9D52C53BCBD00871B6C /* CustomCarouselContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCarouselContainer.swift; sourceTree = "<group>"; };
@@ -420,6 +424,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6D3AD2B72C5CD92E00598FBD /* Floating Bottom Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				6D3AD2B82C5CD96800598FBD /* Helpers */,
+				6D3AD2BB2C5CDA0E00598FBD /* FloatingSheetHome.swift */,
+			);
+			path = "Floating Bottom Sheet";
+			sourceTree = "<group>";
+		};
+		6D3AD2B82C5CD96800598FBD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6D3AD2B92C5CD97200598FBD /* FloatingSheet.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		6D43F9CE2C53BAC400871B6C /* Cover Carousel */ = {
 			isa = PBXGroup;
 			children = (
@@ -520,6 +541,7 @@
 		6DA29CA42B29CAC800D087C0 /* SwiftUIDesigns */ = {
 			isa = PBXGroup;
 			children = (
+				6D3AD2B72C5CD92E00598FBD /* Floating Bottom Sheet */,
 				6D2743AB2C5B8AC30047F37B /* Parallax Carousel Scroll */,
 				6D27439E2C5B78050047F37B /* CustomCardView */,
 				6D2743932C5B69FE0047F37B /* Login Intro Animation */,
@@ -1151,10 +1173,12 @@
 				6DDB48762B2B289F007A0786 /* DatePickerView.swift in Sources */,
 				6DDB488B2B2B2E18007A0786 /* BarProgressStyle.swift in Sources */,
 				6DDB48BD2B2B6B01007A0786 /* VibrancyView.swift in Sources */,
+				6D3AD2BA2C5CD97200598FBD /* FloatingSheet.swift in Sources */,
 				6D197A312C579AEA003E2545 /* IntroView.swift in Sources */,
 				6DDB489B2B2B310A007A0786 /* AnimatedStrokeTriangle.swift in Sources */,
 				6D7442832B3ECF89005D1138 /* TipView.swift in Sources */,
 				6D43F9D22C53BB0300871B6C /* CarouselImage.swift in Sources */,
+				6D3AD2BC2C5CDA0E00598FBD /* FloatingSheetHome.swift in Sources */,
 				6DDB48AC2B2B6600007A0786 /* GradientTextView.swift in Sources */,
 				6D2743902C5A5EF00047F37B /* Intro.swift in Sources */,
 				6DC51C552B2C4757005C0520 /* LineChartView.swift in Sources */,
